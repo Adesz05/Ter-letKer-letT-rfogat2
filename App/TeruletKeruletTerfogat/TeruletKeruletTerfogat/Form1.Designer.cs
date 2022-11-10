@@ -35,22 +35,22 @@ namespace TeruletKeruletTerfogat
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.dOldalTextBox = new System.Windows.Forms.TextBox();
+            this.dOldal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.aOldalMagassagMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.aOldalMagassagTextBox = new System.Windows.Forms.TextBox();
+            this.aOldalMagassag = new System.Windows.Forms.Label();
+            this.cOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.cOldalTextBox = new System.Windows.Forms.TextBox();
+            this.cOldal = new System.Windows.Forms.Label();
+            this.bOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.aOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.bOldalTextBox = new System.Windows.Forms.TextBox();
+            this.bOldal = new System.Windows.Forms.Label();
+            this.aOldalTextBox = new System.Windows.Forms.TextBox();
+            this.aOldal = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -62,6 +62,9 @@ namespace TeruletKeruletTerfogat
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.rSugarMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.rSugarTextBox = new System.Windows.Forms.TextBox();
+            this.sugar = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -115,188 +118,191 @@ namespace TeruletKeruletTerfogat
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox5
+            // dOldalMertekegyseg
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.dOldalMertekegyseg.FormattingEnabled = true;
+            this.dOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.comboBox5.Location = new System.Drawing.Point(192, 134);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(54, 21);
-            this.comboBox5.TabIndex = 14;
-            this.comboBox5.Text = "mm";
-            this.comboBox5.Visible = false;
+            this.dOldalMertekegyseg.Location = new System.Drawing.Point(192, 134);
+            this.dOldalMertekegyseg.Name = "dOldalMertekegyseg";
+            this.dOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.dOldalMertekegyseg.TabIndex = 14;
+            this.dOldalMertekegyseg.Text = "mm";
+            this.dOldalMertekegyseg.Visible = false;
             // 
-            // textBox5
+            // dOldalTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(84, 135);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(90, 20);
-            this.textBox5.TabIndex = 13;
-            this.textBox5.Visible = false;
+            this.dOldalTextBox.Location = new System.Drawing.Point(84, 135);
+            this.dOldalTextBox.Name = "dOldalTextBox";
+            this.dOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.dOldalTextBox.TabIndex = 13;
+            this.dOldalTextBox.Visible = false;
             // 
-            // label7
+            // dOldal
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 137);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "d oldal:";
-            this.label7.Visible = false;
+            this.dOldal.AutoSize = true;
+            this.dOldal.Location = new System.Drawing.Point(8, 137);
+            this.dOldal.Name = "dOldal";
+            this.dOldal.Size = new System.Drawing.Size(41, 13);
+            this.dOldal.TabIndex = 12;
+            this.dOldal.Text = "d oldal:";
+            this.dOldal.Visible = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox5);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox4);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.rSugarMertekegyseg);
+            this.panel1.Controls.Add(this.rSugarTextBox);
+            this.panel1.Controls.Add(this.sugar);
+            this.panel1.Controls.Add(this.dOldalMertekegyseg);
+            this.panel1.Controls.Add(this.dOldalTextBox);
+            this.panel1.Controls.Add(this.dOldal);
+            this.panel1.Controls.Add(this.aOldalMagassagMertekegyseg);
+            this.panel1.Controls.Add(this.aOldalMagassagTextBox);
+            this.panel1.Controls.Add(this.aOldalMagassag);
+            this.panel1.Controls.Add(this.cOldalMertekegyseg);
+            this.panel1.Controls.Add(this.cOldalTextBox);
+            this.panel1.Controls.Add(this.cOldal);
+            this.panel1.Controls.Add(this.bOldalMertekegyseg);
+            this.panel1.Controls.Add(this.aOldalMertekegyseg);
+            this.panel1.Controls.Add(this.bOldalTextBox);
+            this.panel1.Controls.Add(this.bOldal);
+            this.panel1.Controls.Add(this.aOldalTextBox);
+            this.panel1.Controls.Add(this.aOldal);
             this.panel1.Location = new System.Drawing.Point(122, 67);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 306);
             this.panel1.TabIndex = 25;
             // 
-            // comboBox4
+            // aOldalMagassagMertekegyseg
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.aOldalMagassagMertekegyseg.FormattingEnabled = true;
+            this.aOldalMagassagMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.comboBox4.Location = new System.Drawing.Point(192, 172);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(54, 21);
-            this.comboBox4.TabIndex = 11;
-            this.comboBox4.Text = "mm";
+            this.aOldalMagassagMertekegyseg.Location = new System.Drawing.Point(192, 172);
+            this.aOldalMagassagMertekegyseg.Name = "aOldalMagassagMertekegyseg";
+            this.aOldalMagassagMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.aOldalMagassagMertekegyseg.TabIndex = 11;
+            this.aOldalMagassagMertekegyseg.Text = "mm";
             // 
-            // textBox4
+            // aOldalMagassagTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 173);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(90, 20);
-            this.textBox4.TabIndex = 10;
+            this.aOldalMagassagTextBox.Location = new System.Drawing.Point(84, 173);
+            this.aOldalMagassagTextBox.Name = "aOldalMagassagTextBox";
+            this.aOldalMagassagTextBox.Size = new System.Drawing.Size(90, 20);
+            this.aOldalMagassagTextBox.TabIndex = 10;
             // 
-            // label6
+            // aOldalMagassag
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 167);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 26);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "a oldal\r\nmagasság:";
+            this.aOldalMagassag.AutoSize = true;
+            this.aOldalMagassag.Location = new System.Drawing.Point(8, 167);
+            this.aOldalMagassag.Name = "aOldalMagassag";
+            this.aOldalMagassag.Size = new System.Drawing.Size(58, 26);
+            this.aOldalMagassag.TabIndex = 9;
+            this.aOldalMagassag.Text = "a oldal\r\nmagasság:";
             // 
-            // comboBox3
+            // cOldalMertekegyseg
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cOldalMertekegyseg.FormattingEnabled = true;
+            this.cOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.comboBox3.Location = new System.Drawing.Point(192, 96);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(54, 21);
-            this.comboBox3.TabIndex = 8;
-            this.comboBox3.Text = "mm";
-            this.comboBox3.Visible = false;
+            this.cOldalMertekegyseg.Location = new System.Drawing.Point(192, 96);
+            this.cOldalMertekegyseg.Name = "cOldalMertekegyseg";
+            this.cOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.cOldalMertekegyseg.TabIndex = 8;
+            this.cOldalMertekegyseg.Text = "mm";
+            this.cOldalMertekegyseg.Visible = false;
             // 
-            // textBox3
+            // cOldalTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(90, 20);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.Visible = false;
+            this.cOldalTextBox.Location = new System.Drawing.Point(84, 97);
+            this.cOldalTextBox.Name = "cOldalTextBox";
+            this.cOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.cOldalTextBox.TabIndex = 7;
+            this.cOldalTextBox.Visible = false;
             // 
-            // label5
+            // cOldal
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "c oldal:";
-            this.label5.Visible = false;
+            this.cOldal.AutoSize = true;
+            this.cOldal.Location = new System.Drawing.Point(8, 99);
+            this.cOldal.Name = "cOldal";
+            this.cOldal.Size = new System.Drawing.Size(41, 13);
+            this.cOldal.TabIndex = 6;
+            this.cOldal.Text = "c oldal:";
+            this.cOldal.Visible = false;
             // 
-            // comboBox2
+            // bOldalMertekegyseg
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.bOldalMertekegyseg.FormattingEnabled = true;
+            this.bOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.comboBox2.Location = new System.Drawing.Point(192, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(54, 21);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "mm";
+            this.bOldalMertekegyseg.Location = new System.Drawing.Point(192, 56);
+            this.bOldalMertekegyseg.Name = "bOldalMertekegyseg";
+            this.bOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.bOldalMertekegyseg.TabIndex = 5;
+            this.bOldalMertekegyseg.Text = "mm";
             // 
-            // comboBox1
+            // aOldalMertekegyseg
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.aOldalMertekegyseg.FormattingEnabled = true;
+            this.aOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.comboBox1.Location = new System.Drawing.Point(192, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(54, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "mm";
+            this.aOldalMertekegyseg.Location = new System.Drawing.Point(192, 21);
+            this.aOldalMertekegyseg.Name = "aOldalMertekegyseg";
+            this.aOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.aOldalMertekegyseg.TabIndex = 4;
+            this.aOldalMertekegyseg.Text = "mm";
             // 
-            // textBox2
+            // bOldalTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 20);
-            this.textBox2.TabIndex = 3;
+            this.bOldalTextBox.Location = new System.Drawing.Point(84, 57);
+            this.bOldalTextBox.Name = "bOldalTextBox";
+            this.bOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.bOldalTextBox.TabIndex = 3;
             // 
-            // label2
+            // bOldal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "b oldal:";
+            this.bOldal.AutoSize = true;
+            this.bOldal.Location = new System.Drawing.Point(8, 59);
+            this.bOldal.Name = "bOldal";
+            this.bOldal.Size = new System.Drawing.Size(41, 13);
+            this.bOldal.TabIndex = 2;
+            this.bOldal.Text = "b oldal:";
             // 
-            // textBox1
+            // aOldalTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 20);
-            this.textBox1.TabIndex = 1;
+            this.aOldalTextBox.Location = new System.Drawing.Point(84, 22);
+            this.aOldalTextBox.Name = "aOldalTextBox";
+            this.aOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.aOldalTextBox.TabIndex = 1;
             // 
-            // label1
+            // aOldal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "a oldal:";
+            this.aOldal.AutoSize = true;
+            this.aOldal.Location = new System.Drawing.Point(8, 24);
+            this.aOldal.Name = "aOldal";
+            this.aOldal.Size = new System.Drawing.Size(41, 13);
+            this.aOldal.TabIndex = 0;
+            this.aOldal.Text = "a oldal:";
             // 
             // button11
             // 
@@ -307,6 +313,7 @@ namespace TeruletKeruletTerfogat
             this.button11.TabIndex = 24;
             this.button11.Text = "Gúla";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -317,6 +324,7 @@ namespace TeruletKeruletTerfogat
             this.button10.TabIndex = 23;
             this.button10.Text = "Henger";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button4
             // 
@@ -327,6 +335,7 @@ namespace TeruletKeruletTerfogat
             this.button4.TabIndex = 17;
             this.button4.Text = "Téglalap";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -337,6 +346,7 @@ namespace TeruletKeruletTerfogat
             this.button3.TabIndex = 16;
             this.button3.Text = "Paralelogramma ";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -347,6 +357,7 @@ namespace TeruletKeruletTerfogat
             this.button2.TabIndex = 15;
             this.button2.Text = "Trapéz";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -357,6 +368,7 @@ namespace TeruletKeruletTerfogat
             this.button1.TabIndex = 14;
             this.button1.Text = "Háromszög";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button9
             // 
@@ -367,6 +379,7 @@ namespace TeruletKeruletTerfogat
             this.button9.TabIndex = 22;
             this.button9.Text = "Gömb";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -377,6 +390,7 @@ namespace TeruletKeruletTerfogat
             this.button8.TabIndex = 21;
             this.button8.Text = "Kör";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -387,6 +401,7 @@ namespace TeruletKeruletTerfogat
             this.button7.TabIndex = 20;
             this.button7.Text = "Négyzet";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -397,6 +412,7 @@ namespace TeruletKeruletTerfogat
             this.button6.TabIndex = 19;
             this.button6.Text = "Rombusz";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -407,6 +423,41 @@ namespace TeruletKeruletTerfogat
             this.button5.TabIndex = 18;
             this.button5.Text = "Deltoid";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // rSugarMertekegyseg
+            // 
+            this.rSugarMertekegyseg.FormattingEnabled = true;
+            this.rSugarMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.rSugarMertekegyseg.Location = new System.Drawing.Point(192, 210);
+            this.rSugarMertekegyseg.Name = "rSugarMertekegyseg";
+            this.rSugarMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.rSugarMertekegyseg.TabIndex = 17;
+            this.rSugarMertekegyseg.Text = "mm";
+            this.rSugarMertekegyseg.Visible = false;
+            // 
+            // rSugarTextBox
+            // 
+            this.rSugarTextBox.Location = new System.Drawing.Point(84, 211);
+            this.rSugarTextBox.Name = "rSugarTextBox";
+            this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
+            this.rSugarTextBox.TabIndex = 16;
+            this.rSugarTextBox.Visible = false;
+            // 
+            // sugar
+            // 
+            this.sugar.AutoSize = true;
+            this.sugar.Location = new System.Drawing.Point(8, 213);
+            this.sugar.Name = "sugar";
+            this.sugar.Size = new System.Drawing.Size(42, 13);
+            this.sugar.TabIndex = 15;
+            this.sugar.Text = "r sugár:";
+            this.sugar.Visible = false;
             // 
             // Form1
             // 
@@ -446,22 +497,22 @@ namespace TeruletKeruletTerfogat
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox dOldalMertekegyseg;
+        private System.Windows.Forms.TextBox dOldalTextBox;
+        private System.Windows.Forms.Label dOldal;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox aOldalMagassagMertekegyseg;
+        private System.Windows.Forms.TextBox aOldalMagassagTextBox;
+        private System.Windows.Forms.Label aOldalMagassag;
+        private System.Windows.Forms.ComboBox cOldalMertekegyseg;
+        private System.Windows.Forms.TextBox cOldalTextBox;
+        private System.Windows.Forms.Label cOldal;
+        private System.Windows.Forms.ComboBox bOldalMertekegyseg;
+        private System.Windows.Forms.ComboBox aOldalMertekegyseg;
+        private System.Windows.Forms.TextBox bOldalTextBox;
+        private System.Windows.Forms.Label bOldal;
+        private System.Windows.Forms.TextBox aOldalTextBox;
+        private System.Windows.Forms.Label aOldal;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button4;
@@ -473,6 +524,9 @@ namespace TeruletKeruletTerfogat
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox rSugarMertekegyseg;
+        private System.Windows.Forms.TextBox rSugarTextBox;
+        private System.Windows.Forms.Label sugar;
     }
 }
 
