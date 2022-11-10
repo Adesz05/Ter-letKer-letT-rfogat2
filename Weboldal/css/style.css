@@ -2,7 +2,12 @@ body{
     background-color: rgb(83, 0, 190);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size: 180%;
+    color: black;
+    position:relative;
+    margin:0;
+    padding:0;
+    overflow:auto;
 }
 #szoveg{
     background-color: white;
@@ -18,18 +23,20 @@ img{
 }
 button{
     background-color: rgb(55, 198, 255);
-    font-size: larger;
     font-weight: bolder;
     padding: 1%;
     letter-spacing: 1px;
-    margin: 2%;
+    margin: 3%;
 }
 footer{
-    font-size: larger;
-    font-weight: bolder;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 h1{
-    margin: 3%;
+    margin: 4%;
+    font-weight: bold;
 }
 hr{
     border: 2px solid white;
@@ -44,4 +51,86 @@ hr{
     border: 2px solid black;
     width: 80%;
     height: 70%;
+}
+h3{
+    margin-bottom: 8%;
+}
+
+@media (max-width:1000px) {
+    img#xd2 {
+      display: none;
+    }
+  }
+@media (max-width:1000px) {
+    img#xd {
+      display: none;
+    }
+}
+@media (max-width:629px) {
+    div#szoveg {
+        font-size: 100%;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        line-height: 50px;
+    }
+}
+
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+.box-3 { 
+    height: 33.33%;   
+    align-items: center;
+    background-color: rgba(82, 0, 190, 0.774);
+    margin: 3%;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+
+}
+.btn {
+    line-height: 45px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+.btn-three {
+  color: #FFF;
+  font-size: 80%;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 69, 197, 0.226);
+  transition: all 0.5s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
 }
