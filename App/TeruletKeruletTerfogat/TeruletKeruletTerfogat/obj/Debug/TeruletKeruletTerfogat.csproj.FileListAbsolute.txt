@@ -1,0 +1,10 @@
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.exe.config
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.exe
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.pdb
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.AssemblyReference.cache
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.Form1.resources
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.Properties.Resources.resources
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.GenerateResource.cache
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.CoreCompileInputs.cache
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.exe
+C:\Users\kerekadamtamas\Desktop\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.pdb
