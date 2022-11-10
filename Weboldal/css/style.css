@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(83, 0, 190);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+#szoveg{
+    background-color: white;
+    border: 2px solid black;
+}
+#container{
+    margin: 5%;
+    
+}
+img{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+button{
+    background-color: rgb(55, 198, 255);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1%;
+    letter-spacing: 1px;
+    margin: 2%;
+}
+footer{
+    font-size: larger;
+    font-weight: bolder;
+}
+h1{
+    margin: 3%;
+}
+hr{
+    border: 2px solid white;
+    opacity: 100;   
+}
+#xd{
+    border: 2px solid black;
+    height: 70%;
+    width: 90%;
+}
+#xd2{
+    border: 2px solid black;
+    width: 80%;
+    height: 70%;
+}
