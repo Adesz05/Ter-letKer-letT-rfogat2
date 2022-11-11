@@ -34,11 +34,14 @@ namespace TeruletKeruletTerfogat
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.alakzatPictureBox = new System.Windows.Forms.PictureBox();
             this.dOldalMertekegyseg = new System.Windows.Forms.ComboBox();
             this.dOldalTextBox = new System.Windows.Forms.TextBox();
             this.dOldal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rSugarMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.rSugarTextBox = new System.Windows.Forms.TextBox();
+            this.sugar = new System.Windows.Forms.Label();
             this.aOldalMagassagMertekegyseg = new System.Windows.Forms.ComboBox();
             this.aOldalMagassagTextBox = new System.Windows.Forms.TextBox();
             this.aOldalMagassag = new System.Windows.Forms.Label();
@@ -51,22 +54,25 @@ namespace TeruletKeruletTerfogat
             this.bOldal = new System.Windows.Forms.Label();
             this.aOldalTextBox = new System.Windows.Forms.TextBox();
             this.aOldal = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.rSugarMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.rSugarTextBox = new System.Windows.Forms.TextBox();
-            this.sugar = new System.Windows.Forms.Label();
+            this.gulaGomb = new System.Windows.Forms.Button();
+            this.hengerGomb = new System.Windows.Forms.Button();
+            this.teglalapGomb = new System.Windows.Forms.Button();
+            this.paralelogrammaGomb = new System.Windows.Forms.Button();
+            this.trapezGomb = new System.Windows.Forms.Button();
+            this.haromszogGomb = new System.Windows.Forms.Button();
+            this.gombGomb = new System.Windows.Forms.Button();
+            this.korGomb = new System.Windows.Forms.Button();
+            this.negyzetGomb = new System.Windows.Forms.Button();
+            this.rombuszGomb = new System.Windows.Forms.Button();
+            this.deltoidGomb = new System.Windows.Forms.Button();
+            this.eOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.eOldalTextBox = new System.Windows.Forms.TextBox();
+            this.eOldal = new System.Windows.Forms.Label();
+            this.fOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.fOldalTextBox = new System.Windows.Forms.TextBox();
+            this.fOldal = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alakzatPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,20 +109,20 @@ namespace TeruletKeruletTerfogat
             // 
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.alakzatPictureBox);
             this.panel2.Location = new System.Drawing.Point(377, 67);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(411, 306);
             this.panel2.TabIndex = 26;
             // 
-            // pictureBox1
+            // alakzatPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.alakzatPictureBox.Location = new System.Drawing.Point(27, 20);
+            this.alakzatPictureBox.Name = "alakzatPictureBox";
+            this.alakzatPictureBox.Size = new System.Drawing.Size(360, 200);
+            this.alakzatPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.alakzatPictureBox.TabIndex = 14;
+            this.alakzatPictureBox.TabStop = false;
             // 
             // dOldalMertekegyseg
             // 
@@ -154,6 +160,12 @@ namespace TeruletKeruletTerfogat
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.fOldalMertekegyseg);
+            this.panel1.Controls.Add(this.fOldalTextBox);
+            this.panel1.Controls.Add(this.fOldal);
+            this.panel1.Controls.Add(this.eOldalMertekegyseg);
+            this.panel1.Controls.Add(this.eOldalTextBox);
+            this.panel1.Controls.Add(this.eOldal);
             this.panel1.Controls.Add(this.rSugarMertekegyseg);
             this.panel1.Controls.Add(this.rSugarTextBox);
             this.panel1.Controls.Add(this.sugar);
@@ -176,6 +188,40 @@ namespace TeruletKeruletTerfogat
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 306);
             this.panel1.TabIndex = 25;
+            // 
+            // rSugarMertekegyseg
+            // 
+            this.rSugarMertekegyseg.FormattingEnabled = true;
+            this.rSugarMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.rSugarMertekegyseg.Location = new System.Drawing.Point(192, 210);
+            this.rSugarMertekegyseg.Name = "rSugarMertekegyseg";
+            this.rSugarMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.rSugarMertekegyseg.TabIndex = 17;
+            this.rSugarMertekegyseg.Text = "mm";
+            this.rSugarMertekegyseg.Visible = false;
+            // 
+            // rSugarTextBox
+            // 
+            this.rSugarTextBox.Location = new System.Drawing.Point(84, 211);
+            this.rSugarTextBox.Name = "rSugarTextBox";
+            this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
+            this.rSugarTextBox.TabIndex = 16;
+            this.rSugarTextBox.Visible = false;
+            // 
+            // sugar
+            // 
+            this.sugar.AutoSize = true;
+            this.sugar.Location = new System.Drawing.Point(8, 213);
+            this.sugar.Name = "sugar";
+            this.sugar.Size = new System.Drawing.Size(42, 13);
+            this.sugar.TabIndex = 15;
+            this.sugar.Text = "r sugár:";
+            this.sugar.Visible = false;
             // 
             // aOldalMagassagMertekegyseg
             // 
@@ -304,160 +350,194 @@ namespace TeruletKeruletTerfogat
             this.aOldal.TabIndex = 0;
             this.aOldal.Text = "a oldal:";
             // 
-            // button11
+            // gulaGomb
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button11.Location = new System.Drawing.Point(12, 392);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(104, 32);
-            this.button11.TabIndex = 24;
-            this.button11.Text = "Gúla";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.gulaGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gulaGomb.Location = new System.Drawing.Point(12, 392);
+            this.gulaGomb.Name = "gulaGomb";
+            this.gulaGomb.Size = new System.Drawing.Size(104, 32);
+            this.gulaGomb.TabIndex = 24;
+            this.gulaGomb.Text = "Gúla";
+            this.gulaGomb.UseVisualStyleBackColor = true;
+            this.gulaGomb.Click += new System.EventHandler(this.gulaGomb_Click);
             // 
-            // button10
+            // hengerGomb
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button10.Location = new System.Drawing.Point(12, 354);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(104, 32);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "Henger";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.hengerGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.hengerGomb.Location = new System.Drawing.Point(12, 354);
+            this.hengerGomb.Name = "hengerGomb";
+            this.hengerGomb.Size = new System.Drawing.Size(104, 32);
+            this.hengerGomb.TabIndex = 23;
+            this.hengerGomb.Text = "Henger";
+            this.hengerGomb.UseVisualStyleBackColor = true;
+            this.hengerGomb.Click += new System.EventHandler(this.hengerGomb_Click);
             // 
-            // button4
+            // teglalapGomb
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(12, 126);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 32);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Téglalap";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.teglalapGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.teglalapGomb.Location = new System.Drawing.Point(12, 126);
+            this.teglalapGomb.Name = "teglalapGomb";
+            this.teglalapGomb.Size = new System.Drawing.Size(104, 32);
+            this.teglalapGomb.TabIndex = 17;
+            this.teglalapGomb.Text = "Téglalap";
+            this.teglalapGomb.UseVisualStyleBackColor = true;
+            this.teglalapGomb.Click += new System.EventHandler(this.teglalapGomb_Click);
             // 
-            // button3
+            // paralelogrammaGomb
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(12, 88);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 32);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Paralelogramma ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.paralelogrammaGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.paralelogrammaGomb.Location = new System.Drawing.Point(12, 88);
+            this.paralelogrammaGomb.Name = "paralelogrammaGomb";
+            this.paralelogrammaGomb.Size = new System.Drawing.Size(104, 32);
+            this.paralelogrammaGomb.TabIndex = 16;
+            this.paralelogrammaGomb.Text = "Paralelogramma ";
+            this.paralelogrammaGomb.UseVisualStyleBackColor = true;
+            this.paralelogrammaGomb.Click += new System.EventHandler(this.paralelogrammaGomb_Click);
             // 
-            // button2
+            // trapezGomb
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(12, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 32);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Trapéz";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.trapezGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.trapezGomb.Location = new System.Drawing.Point(12, 50);
+            this.trapezGomb.Name = "trapezGomb";
+            this.trapezGomb.Size = new System.Drawing.Size(104, 32);
+            this.trapezGomb.TabIndex = 15;
+            this.trapezGomb.Text = "Trapéz";
+            this.trapezGomb.UseVisualStyleBackColor = true;
+            this.trapezGomb.Click += new System.EventHandler(this.trapezGomb_Click);
             // 
-            // button1
+            // haromszogGomb
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Háromszög";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.haromszogGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.haromszogGomb.Location = new System.Drawing.Point(12, 12);
+            this.haromszogGomb.Name = "haromszogGomb";
+            this.haromszogGomb.Size = new System.Drawing.Size(104, 32);
+            this.haromszogGomb.TabIndex = 14;
+            this.haromszogGomb.Text = "Háromszög";
+            this.haromszogGomb.UseVisualStyleBackColor = true;
+            this.haromszogGomb.Click += new System.EventHandler(this.haromszogGomb_Click);
             // 
-            // button9
+            // gombGomb
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button9.Location = new System.Drawing.Point(12, 316);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(104, 32);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "Gömb";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.gombGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gombGomb.Location = new System.Drawing.Point(12, 316);
+            this.gombGomb.Name = "gombGomb";
+            this.gombGomb.Size = new System.Drawing.Size(104, 32);
+            this.gombGomb.TabIndex = 22;
+            this.gombGomb.Text = "Gömb";
+            this.gombGomb.UseVisualStyleBackColor = true;
+            this.gombGomb.Click += new System.EventHandler(this.gombGomb_Click);
             // 
-            // button8
+            // korGomb
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button8.Location = new System.Drawing.Point(12, 278);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 32);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "Kör";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.korGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.korGomb.Location = new System.Drawing.Point(12, 278);
+            this.korGomb.Name = "korGomb";
+            this.korGomb.Size = new System.Drawing.Size(104, 32);
+            this.korGomb.TabIndex = 21;
+            this.korGomb.Text = "Kör";
+            this.korGomb.UseVisualStyleBackColor = true;
+            this.korGomb.Click += new System.EventHandler(this.korGomb_Click);
             // 
-            // button7
+            // negyzetGomb
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.Location = new System.Drawing.Point(12, 240);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 32);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "Négyzet";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.negyzetGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.negyzetGomb.Location = new System.Drawing.Point(12, 240);
+            this.negyzetGomb.Name = "negyzetGomb";
+            this.negyzetGomb.Size = new System.Drawing.Size(104, 32);
+            this.negyzetGomb.TabIndex = 20;
+            this.negyzetGomb.Text = "Négyzet";
+            this.negyzetGomb.UseVisualStyleBackColor = true;
+            this.negyzetGomb.Click += new System.EventHandler(this.negyzetGomb_Click);
             // 
-            // button6
+            // rombuszGomb
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.Location = new System.Drawing.Point(12, 202);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 32);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Rombusz";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.rombuszGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rombuszGomb.Location = new System.Drawing.Point(12, 202);
+            this.rombuszGomb.Name = "rombuszGomb";
+            this.rombuszGomb.Size = new System.Drawing.Size(104, 32);
+            this.rombuszGomb.TabIndex = 19;
+            this.rombuszGomb.Text = "Rombusz";
+            this.rombuszGomb.UseVisualStyleBackColor = true;
+            this.rombuszGomb.Click += new System.EventHandler(this.rombuszGomb_Click);
             // 
-            // button5
+            // deltoidGomb
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(12, 164);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 32);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Deltoid";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.deltoidGomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.deltoidGomb.Location = new System.Drawing.Point(12, 164);
+            this.deltoidGomb.Name = "deltoidGomb";
+            this.deltoidGomb.Size = new System.Drawing.Size(104, 32);
+            this.deltoidGomb.TabIndex = 18;
+            this.deltoidGomb.Text = "Deltoid";
+            this.deltoidGomb.UseVisualStyleBackColor = true;
+            this.deltoidGomb.Click += new System.EventHandler(this.deltoidGomb_Click);
             // 
-            // rSugarMertekegyseg
+            // eOldalMertekegyseg
             // 
-            this.rSugarMertekegyseg.FormattingEnabled = true;
-            this.rSugarMertekegyseg.Items.AddRange(new object[] {
+            this.eOldalMertekegyseg.FormattingEnabled = true;
+            this.eOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.rSugarMertekegyseg.Location = new System.Drawing.Point(192, 210);
-            this.rSugarMertekegyseg.Name = "rSugarMertekegyseg";
-            this.rSugarMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.rSugarMertekegyseg.TabIndex = 17;
-            this.rSugarMertekegyseg.Text = "mm";
-            this.rSugarMertekegyseg.Visible = false;
+            this.eOldalMertekegyseg.Location = new System.Drawing.Point(192, 237);
+            this.eOldalMertekegyseg.Name = "eOldalMertekegyseg";
+            this.eOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.eOldalMertekegyseg.TabIndex = 20;
+            this.eOldalMertekegyseg.Text = "mm";
+            this.eOldalMertekegyseg.Visible = false;
             // 
-            // rSugarTextBox
+            // eOldalTextBox
             // 
-            this.rSugarTextBox.Location = new System.Drawing.Point(84, 211);
-            this.rSugarTextBox.Name = "rSugarTextBox";
-            this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
-            this.rSugarTextBox.TabIndex = 16;
-            this.rSugarTextBox.Visible = false;
+            this.eOldalTextBox.Location = new System.Drawing.Point(84, 238);
+            this.eOldalTextBox.Name = "eOldalTextBox";
+            this.eOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.eOldalTextBox.TabIndex = 19;
+            this.eOldalTextBox.Visible = false;
             // 
-            // sugar
+            // eOldal
             // 
-            this.sugar.AutoSize = true;
-            this.sugar.Location = new System.Drawing.Point(8, 213);
-            this.sugar.Name = "sugar";
-            this.sugar.Size = new System.Drawing.Size(42, 13);
-            this.sugar.TabIndex = 15;
-            this.sugar.Text = "r sugár:";
-            this.sugar.Visible = false;
+            this.eOldal.AutoSize = true;
+            this.eOldal.Location = new System.Drawing.Point(8, 240);
+            this.eOldal.Name = "eOldal";
+            this.eOldal.Size = new System.Drawing.Size(41, 13);
+            this.eOldal.TabIndex = 18;
+            this.eOldal.Text = "e oldal:";
+            this.eOldal.Visible = false;
+            // 
+            // fOldalMertekegyseg
+            // 
+            this.fOldalMertekegyseg.FormattingEnabled = true;
+            this.fOldalMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.fOldalMertekegyseg.Location = new System.Drawing.Point(192, 263);
+            this.fOldalMertekegyseg.Name = "fOldalMertekegyseg";
+            this.fOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.fOldalMertekegyseg.TabIndex = 23;
+            this.fOldalMertekegyseg.Text = "mm";
+            this.fOldalMertekegyseg.Visible = false;
+            // 
+            // fOldalTextBox
+            // 
+            this.fOldalTextBox.Location = new System.Drawing.Point(84, 264);
+            this.fOldalTextBox.Name = "fOldalTextBox";
+            this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.fOldalTextBox.TabIndex = 22;
+            this.fOldalTextBox.Visible = false;
+            // 
+            // fOldal
+            // 
+            this.fOldal.AutoSize = true;
+            this.fOldal.Location = new System.Drawing.Point(8, 266);
+            this.fOldal.Name = "fOldal";
+            this.fOldal.Size = new System.Drawing.Size(38, 13);
+            this.fOldal.TabIndex = 21;
+            this.fOldal.Text = "f oldal:";
+            this.fOldal.Visible = false;
             // 
             // Form1
             // 
@@ -467,23 +547,23 @@ namespace TeruletKeruletTerfogat
             this.Controls.Add(this.button12);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.gulaGomb);
+            this.Controls.Add(this.hengerGomb);
+            this.Controls.Add(this.teglalapGomb);
+            this.Controls.Add(this.paralelogrammaGomb);
+            this.Controls.Add(this.trapezGomb);
+            this.Controls.Add(this.haromszogGomb);
+            this.Controls.Add(this.gombGomb);
+            this.Controls.Add(this.korGomb);
+            this.Controls.Add(this.negyzetGomb);
+            this.Controls.Add(this.rombuszGomb);
+            this.Controls.Add(this.deltoidGomb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "TerületKerületTérfogat";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alakzatPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -496,7 +576,7 @@ namespace TeruletKeruletTerfogat
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox alakzatPictureBox;
         private System.Windows.Forms.ComboBox dOldalMertekegyseg;
         private System.Windows.Forms.TextBox dOldalTextBox;
         private System.Windows.Forms.Label dOldal;
@@ -513,20 +593,26 @@ namespace TeruletKeruletTerfogat
         private System.Windows.Forms.Label bOldal;
         private System.Windows.Forms.TextBox aOldalTextBox;
         private System.Windows.Forms.Label aOldal;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button gulaGomb;
+        private System.Windows.Forms.Button hengerGomb;
+        private System.Windows.Forms.Button teglalapGomb;
+        private System.Windows.Forms.Button paralelogrammaGomb;
+        private System.Windows.Forms.Button trapezGomb;
+        private System.Windows.Forms.Button haromszogGomb;
+        private System.Windows.Forms.Button gombGomb;
+        private System.Windows.Forms.Button korGomb;
+        private System.Windows.Forms.Button negyzetGomb;
+        private System.Windows.Forms.Button rombuszGomb;
+        private System.Windows.Forms.Button deltoidGomb;
         private System.Windows.Forms.ComboBox rSugarMertekegyseg;
         private System.Windows.Forms.TextBox rSugarTextBox;
         private System.Windows.Forms.Label sugar;
+        private System.Windows.Forms.ComboBox fOldalMertekegyseg;
+        private System.Windows.Forms.TextBox fOldalTextBox;
+        private System.Windows.Forms.Label fOldal;
+        private System.Windows.Forms.ComboBox eOldalMertekegyseg;
+        private System.Windows.Forms.TextBox eOldalTextBox;
+        private System.Windows.Forms.Label eOldal;
     }
 }
 

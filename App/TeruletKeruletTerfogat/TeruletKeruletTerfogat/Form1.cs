@@ -30,127 +30,220 @@ namespace TeruletKeruletTerfogat
 
         private void Gula()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Henger()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Gomb()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Kor()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Negyzet()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Rombusz()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Deltoid()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Paralelogramma()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Trapez()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Haromszog()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Teglalap()
         {
-            aOldalVisible();
-            aOldalNemVisible();
+            aOldalLathato();
+            aOldalNemLathato();
         }
 
-        private void aOldalNemVisible()
+        private void aOldalNemLathato()
         {
             aOldal.Visible = false;
             aOldalTextBox.Visible = false;
             aOldalMertekegyseg.Visible = false;
         }
 
-        private void aOldalVisible()
+        private void aOldalLathato()
         {
             aOldal.Visible = true;
             aOldalTextBox.Visible = true;
             aOldalMertekegyseg.Visible = true;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void dOldalNemLathato()
         {
+            dOldal.Visible = false;
+            dOldalTextBox.Visible = false;
+            dOldalMertekegyseg.Visible = false;
+        }
+
+        private void dOldalLathato()
+        {
+            dOldal.Visible = true;
+            dOldalTextBox.Visible = true;
+            dOldalMertekegyseg.Visible = true;
+        }
+        private void eOldalNemLathato()
+        {
+            eOldal.Visible = false;
+            eOldalTextBox.Visible = false;
+            eOldalMertekegyseg.Visible = false;
+        }
+
+        private void eOldalLathato()
+        {
+            eOldal.Visible = true;
+            eOldalTextBox.Visible = true;
+            eOldalMertekegyseg.Visible = true;
+        }
+        private void fOldalNemLathato()
+        {
+            fOldal.Visible = false;
+            fOldalTextBox.Visible = false;
+            fOldalMertekegyseg.Visible = false;
+        }
+
+        private void fOldalLathato()
+        {
+            fOldal.Visible = true;
+            fOldalTextBox.Visible = true;
+            fOldalMertekegyseg.Visible = true;
+        }
+
+        private void haromszogGomb_Click(object sender, EventArgs e)
+        {
+            alakzatPictureBox.Image = Image.FromFile(@"Háromszög.png");
+            aOldalLathato();
+            bOldalLathato();
+            cOldalLathato();
+            aOldalMagassagLathato();
+            Torles();
+        }
+
+        private void Torles()
+        {
+            aOldalNemLathato();
+            bOldalNemLathato();
+            cOldalNemLathato();
+            aOldalMagassagNemLathato();
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void aOldalMagassagNemLathato()
         {
-
+            aOldalMagassag.Visible = false;
+            aOldalMagassagTextBox.Visible = false;
+            aOldalMagassagMertekegyseg.Visible = false;
+        }
+        private void bOldalNemLathato()
+        {
+            bOldal.Visible = false;
+            bOldalTextBox.Visible = false;
+            bOldalMertekegyseg.Visible = false;
+        }
+        private void cOldalNemLathato()
+        {
+            cOldal.Visible = false;
+            cOldalTextBox.Visible = false;
+            cOldalMertekegyseg.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void aOldalMagassagLathato()
         {
-
+            aOldalMagassag.Visible = true;
+            aOldalMagassagTextBox.Visible = true;
+            aOldalMagassagMertekegyseg.Visible = true;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void cOldalLathato()
         {
-
+            cOldal.Visible = true;
+            cOldalTextBox.Visible = true;
+            cOldalMertekegyseg.Visible = true;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void bOldalLathato()
         {
-
+            bOldal.Visible = true;
+            bOldalTextBox.Visible = true;
+            bOldalMertekegyseg.Visible = true;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void trapezGomb_Click(object sender, EventArgs e)
         {
-
+            alakzatPictureBox.Image = Image.FromFile(@"Trapéz.png");
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void paralelogrammaGomb_Click(object sender, EventArgs e)
         {
-
+            alakzatPictureBox.Image = Image.FromFile(@"Paralelogramma.png");
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void teglalapGomb_Click(object sender, EventArgs e)
         {
-
+            alakzatPictureBox.Image = Image.FromFile(@"Téglalap.png");
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void deltoidGomb_Click(object sender, EventArgs e)
         {
-
+            alakzatPictureBox.Image = Image.FromFile(@"Deltoid.png");
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void rombuszGomb_Click(object sender, EventArgs e)
         {
-
+            alakzatPictureBox.Image = Image.FromFile(@"Rombusz.png");
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void negyzetGomb_Click(object sender, EventArgs e)
         {
+            alakzatPictureBox.Image = Image.FromFile(@"Négyzet.png");
+        }
 
+        private void korGomb_Click(object sender, EventArgs e)
+        {
+            alakzatPictureBox.Image = Image.FromFile(@"Kör.png");
+        }
+
+        private void gombGomb_Click(object sender, EventArgs e)
+        {
+            alakzatPictureBox.Image = Image.FromFile(@"Gömb.png");
+        }
+
+        private void hengerGomb_Click(object sender, EventArgs e)
+        {
+            alakzatPictureBox.Image = Image.FromFile(@"Henger.png");
+        }
+
+        private void gulaGomb_Click(object sender, EventArgs e)
+        {
+            alakzatPictureBox.Image = Image.FromFile(@"Gúla.png");
         }
     }
 }
