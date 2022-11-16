@@ -1,0 +1,237 @@
+body{
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+    font-size: 180%;
+    color: #F0EDEE;
+    position:relative;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+footer{
+    clear: both;
+    padding: 1%;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+h1{
+    margin: 2%;
+    font-weight: bold;
+    color: #4FD1C5;
+}
+footer hr{
+  margin-left: 5%;
+  width: 90%;
+  border: #4FD1C5 4px solid;
+  opacity: 100;
+  border-radius: 50%;
+}
+.navMenu{
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+}
+a {
+  color: #F0EDEE;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: underline;
+}
+footer a:hover{
+  color: #2C666E;
+}
+
+.navMenu a:hover {
+  color: #2C666E;
+}
+label{
+  margin-right: 3%;
+}
+input{
+  color: white;
+  border: #00FFCB 1px solid;
+  background-color: #27272770;
+  width: 55%;
+}
+.letolteskep{
+  margin-bottom: 5%;
+  width: 30%;
+  height: 30%;
+  border: #00FFCB 2px solid;
+  box-shadow: 8px 8px 20px #2C666E;
+}
+
+/*RÓLUNK OLDAL DIVEK  ----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.rolunk{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.rolunk h3{
+  font-style: italic;
+  font-size: larger;
+  letter-spacing: 2px;
+  text-shadow:1px  1px #00FFCB;
+}
+
+/*DIV SZÖVEG ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.parent {
+
+  background: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  background-color: #2C666E;
+  width: 50%;
+  border: 2px solid #4FD1C5;
+  padding: 2%;
+  box-shadow: 5px 5px 10px #2C666E ;
+}
+.child a:hover{
+  color: #4FD1C5;
+}
+
+/*GOMB      -------------------------------------------------------------------------------------------------------------------------------------------------- */
+.bekuld{
+  margin-top: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+  
+  .bekuld:hover, .bekuld:focus {
+    color: #F0EDEE;
+    transform: translateY(-6px);
+  }
+  
+  .bekuld:hover::before, .bekuld:focus::before {
+    opacity: 1;
+  }
+  
+  .bekuld::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .bekuld:hover::after, .bekuld:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+/* MASIK GOMB */
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #F0EDEE;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+

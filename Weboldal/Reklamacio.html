@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Weboldal/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Weboldal/css/fo.css">
-    <title>Letöltés</title>
+    <title>Reklamációs felület </title>
 </head>
 <body>
     <h1>
@@ -17,20 +17,24 @@
         <a href="/Weboldal/Leiras.html">Leírás</a>
         <a href="/Weboldal/Letoltes.html">Letöltés</a>
         <a href="/Weboldal/Elerhetosegek.html">Rólunk</a>
+        <div class="dot"></div>
       </nav>
 
-      <img class="letolteskep" src="/Weboldal/img/Kocka.jpg" alt="Kocka">
+      <form action="#" method="post">
+        <label for="email"> E-mail cím: </label>
+        <input type="email" id="email"> <br><br>
+        <label for="panasz"> Kérem ide írja a problémáját: </label>
+        <input type="text" id="panasz"> <br><br>
+    </form>
 
-    <div class="wrap">
-        <button class="button"> Letöltés </button>
-    </div>
+    <button class="bekuld"> Beküldés </button>
 
-
-
-   <footer>
+    <footer>
         <hr>
-        Bármilyen problémája merül fel kérem keressen minket: <br>
-        <a href="Reklamacio.html"> Itt </a>
+       <a href="Leiras.html">  Vissza a főoldalra  </a> 
     </footer>
+
+    <script src="/Weboldal/js/bootstrap.min.js"></script>
+    <script src="/Weboldal/js/app.js"></script>
 </body>
 </html>
