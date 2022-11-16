@@ -12,70 +12,25 @@ namespace TeruletKeruletTerfogat
 {
     public partial class Form1 : Form
     {
+        static List<Poziciok> Pozik = new List<Poziciok>();
         public Form1()
         {
             InitializeComponent();
+            PozicioFeltoltes();
             Teglalap();
-            Haromszog();
-            Trapez();
-            Paralelogramma();
-            Deltoid();
-            Rombusz();
-            Negyzet();
-            Kor();
-            Gomb();
-            Henger();
-            Gula();
-        }
-
-        private void Gula()
-        {
             
         }
 
-        private void Henger()
+        private void PozicioFeltoltes()
         {
-            
-        }
-
-        private void Gomb()
-        {
-            
-        }
-
-        private void Kor()
-        {
-            
-        }
-
-        private void Negyzet()
-        {
-            
-        }
-
-        private void Rombusz()
-        {
-            
-        }
-
-        private void Deltoid()
-        {
-            
-        }
-
-        private void Paralelogramma()
-        {
-            
-        }
-
-        private void Trapez()
-        {
-            
-        }
-
-        private void Haromszog()
-        {
-            
+            for (int i = 1; i < 10; i++)
+            {
+                Pozik.Add(new Poziciok(new Koordinatak(8, 24+35*i), new Koordinatak(84, 22+35*i), new Koordinatak(192, 21+35*i)));
+            }
+            for (int i = 0; i < Pozik.Count; i++)
+            {
+                aOldal.Location = new Point(Pozik[3].Label.X, Pozik[3].Label.Y);
+            }
         }
 
         private void Teglalap()
@@ -244,6 +199,11 @@ namespace TeruletKeruletTerfogat
         private void gulaGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Gúla.png");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            fOldal.Location = new Point(8, 24);
         }
     }
 }
