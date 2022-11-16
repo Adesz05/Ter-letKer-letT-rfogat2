@@ -18,3 +18,13 @@ D:\TerületKerületTérfogat2\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\
 D:\TerületKerületTérfogat2\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.CoreCompileInputs.cache
 D:\TerületKerületTérfogat2\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.exe
 D:\TerületKerületTérfogat2\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.pdb
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.exe.config
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.exe
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\bin\Debug\TeruletKeruletTerfogat.pdb
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.AssemblyReference.cache
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.Form1.resources
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.Properties.Resources.resources
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.GenerateResource.cache
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.csproj.CoreCompileInputs.cache
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.exe
+D:\TeruletKeruletTerfogat\App\TeruletKeruletTerfogat\TeruletKeruletTerfogat\obj\Debug\TeruletKeruletTerfogat.pdb
