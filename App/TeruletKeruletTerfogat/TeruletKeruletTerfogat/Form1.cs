@@ -23,13 +23,9 @@ namespace TeruletKeruletTerfogat
 
         private void PozicioFeltoltes()
         {
-            for (int i = 1; i < 10; i++)
+            for (int i = 0; i < 9; i++)
             {
                 Pozik.Add(new Poziciok(new Koordinatak(8, 24+35*i), new Koordinatak(84, 22+35*i), new Koordinatak(192, 21+35*i)));
-            }
-            for (int i = 0; i < Pozik.Count; i++)
-            {
-                aOldal.Location = new Point(Pozik[3].Label.X, Pozik[3].Label.Y);
             }
         }
 
@@ -164,6 +160,15 @@ namespace TeruletKeruletTerfogat
         private void teglalapGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Téglalap.png");
+            aOldal.Location = new Point(Pozik[0].Label.X, Pozik[0].Label.Y);
+            aOldalTextBox.Location = new Point(Pozik[0].TextBox.X, Pozik[0].TextBox.Y);
+            aOldalMertekegyseg.Location = new Point(Pozik[0].ComboBox.X, Pozik[0].ComboBox.Y);
+            aOldalLathato();
+            bOldal.Location = new Point(Pozik[1].Label.X, Pozik[1].Label.Y);
+            bOldalTextBox.Location = new Point(Pozik[1].TextBox.X, Pozik[1].TextBox.Y);
+            bOldalMertekegyseg.Location = new Point(Pozik[1].ComboBox.X, Pozik[1].ComboBox.Y);
+            bOldalLathato();
+
         }
 
         private void deltoidGomb_Click(object sender, EventArgs e)
@@ -179,6 +184,10 @@ namespace TeruletKeruletTerfogat
         private void negyzetGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Négyzet.png");
+            aOldal.Location = new Point(Pozik[0].Label.X, Pozik[0].Label.Y);
+            aOldalTextBox.Location = new Point(Pozik[0].TextBox.X, Pozik[0].TextBox.Y);
+            aOldalMertekegyseg.Location = new Point(Pozik[0].ComboBox.X, Pozik[0].ComboBox.Y);
+            aOldalLathato();
         }
 
         private void korGomb_Click(object sender, EventArgs e)
