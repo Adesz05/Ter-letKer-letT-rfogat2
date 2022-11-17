@@ -26,6 +26,7 @@ h1{
     color: #4FD1C5;
 }
 footer hr{
+  margin-top: 1.8%;
   margin-left: 5%;
   width: 90%;
   border: #4FD1C5 4px solid;
@@ -247,6 +248,12 @@ content: '';
     width: 95%;
     margin-top: 10%;
     margin-bottom: 25%;
-  }
-  
+  } 
+}
+
+#kerdojel{
+  border: #00FFCB 1px solid;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  width: 20%;
+  height: 20%;
 }
