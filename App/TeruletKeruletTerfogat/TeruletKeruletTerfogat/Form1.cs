@@ -12,70 +12,21 @@ namespace TeruletKeruletTerfogat
 {
     public partial class Form1 : Form
     {
+        static List<Poziciok> Pozik = new List<Poziciok>();
         public Form1()
         {
             InitializeComponent();
+            PozicioFeltoltes();
             Teglalap();
-            Haromszog();
-            Trapez();
-            Paralelogramma();
-            Deltoid();
-            Rombusz();
-            Negyzet();
-            Kor();
-            Gomb();
-            Henger();
-            Gula();
-        }
-
-        private void Gula()
-        {
             
         }
 
-        private void Henger()
+        private void PozicioFeltoltes()
         {
-            
-        }
-
-        private void Gomb()
-        {
-            
-        }
-
-        private void Kor()
-        {
-            
-        }
-
-        private void Negyzet()
-        {
-            
-        }
-
-        private void Rombusz()
-        {
-            
-        }
-
-        private void Deltoid()
-        {
-            
-        }
-
-        private void Paralelogramma()
-        {
-            
-        }
-
-        private void Trapez()
-        {
-            
-        }
-
-        private void Haromszog()
-        {
-            
+            for (int i = 0; i < 9; i++)
+            {
+                Pozik.Add(new Poziciok(new Koordinatak(8, 24+35*i), new Koordinatak(84, 22+35*i), new Koordinatak(192, 21+35*i)));
+            }
         }
 
         private void Teglalap()
@@ -209,6 +160,15 @@ namespace TeruletKeruletTerfogat
         private void teglalapGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Téglalap.png");
+            aOldal.Location = new Point(Pozik[0].Label.X, Pozik[0].Label.Y);
+            aOldalTextBox.Location = new Point(Pozik[0].TextBox.X, Pozik[0].TextBox.Y);
+            aOldalMertekegyseg.Location = new Point(Pozik[0].ComboBox.X, Pozik[0].ComboBox.Y);
+            aOldalLathato();
+            bOldal.Location = new Point(Pozik[1].Label.X, Pozik[1].Label.Y);
+            bOldalTextBox.Location = new Point(Pozik[1].TextBox.X, Pozik[1].TextBox.Y);
+            bOldalMertekegyseg.Location = new Point(Pozik[1].ComboBox.X, Pozik[1].ComboBox.Y);
+            bOldalLathato();
+
         }
 
         private void deltoidGomb_Click(object sender, EventArgs e)
@@ -224,6 +184,10 @@ namespace TeruletKeruletTerfogat
         private void negyzetGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Négyzet.png");
+            aOldal.Location = new Point(Pozik[0].Label.X, Pozik[0].Label.Y);
+            aOldalTextBox.Location = new Point(Pozik[0].TextBox.X, Pozik[0].TextBox.Y);
+            aOldalMertekegyseg.Location = new Point(Pozik[0].ComboBox.X, Pozik[0].ComboBox.Y);
+            aOldalLathato();
         }
 
         private void korGomb_Click(object sender, EventArgs e)
@@ -244,6 +208,11 @@ namespace TeruletKeruletTerfogat
         private void gulaGomb_Click(object sender, EventArgs e)
         {
             alakzatPictureBox.Image = Image.FromFile(@"Gúla.png");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            fOldal.Location = new Point(8, 24);
         }
     }
 }
