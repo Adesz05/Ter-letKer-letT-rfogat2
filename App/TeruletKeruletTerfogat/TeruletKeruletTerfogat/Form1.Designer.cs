@@ -39,27 +39,30 @@ namespace TeruletKeruletTerfogat
             this.dOldalTextBox = new System.Windows.Forms.TextBox();
             this.dOldal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.aOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.cOldal = new System.Windows.Forms.Label();
+            this.mOldalTextBox = new System.Windows.Forms.TextBox();
+            this.bOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.cOldalTextBox = new System.Windows.Forms.TextBox();
+            this.mOldal = new System.Windows.Forms.Label();
+            this.bOldalTextBox = new System.Windows.Forms.TextBox();
+            this.cOldalMertekegyseg = new System.Windows.Forms.ComboBox();
             this.fOldalMertekegyseg = new System.Windows.Forms.ComboBox();
+            this.bOldal = new System.Windows.Forms.Label();
+            this.aOldalMagassag = new System.Windows.Forms.Label();
             this.fOldalTextBox = new System.Windows.Forms.TextBox();
+            this.aOldalTextBox = new System.Windows.Forms.TextBox();
+            this.aOldalMagassagTextBox = new System.Windows.Forms.TextBox();
             this.fOldal = new System.Windows.Forms.Label();
+            this.aOldal = new System.Windows.Forms.Label();
+            this.aOldalMagassagMertekegyseg = new System.Windows.Forms.ComboBox();
             this.eOldalMertekegyseg = new System.Windows.Forms.ComboBox();
             this.eOldalTextBox = new System.Windows.Forms.TextBox();
+            this.rSugar = new System.Windows.Forms.Label();
             this.eOldal = new System.Windows.Forms.Label();
-            this.rSugarMertekegyseg = new System.Windows.Forms.ComboBox();
             this.rSugarTextBox = new System.Windows.Forms.TextBox();
-            this.sugar = new System.Windows.Forms.Label();
-            this.aOldalMagassagMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.aOldalMagassagTextBox = new System.Windows.Forms.TextBox();
-            this.aOldalMagassag = new System.Windows.Forms.Label();
-            this.cOldalMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.cOldalTextBox = new System.Windows.Forms.TextBox();
-            this.cOldal = new System.Windows.Forms.Label();
-            this.bOldalMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.aOldalMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.bOldalTextBox = new System.Windows.Forms.TextBox();
-            this.bOldal = new System.Windows.Forms.Label();
-            this.aOldalTextBox = new System.Windows.Forms.TextBox();
-            this.aOldal = new System.Windows.Forms.Label();
+            this.rSugarMertekegyseg = new System.Windows.Forms.ComboBox();
             this.gulaGomb = new System.Windows.Forms.Button();
             this.hengerGomb = new System.Windows.Forms.Button();
             this.teglalapGomb = new System.Windows.Forms.Button();
@@ -71,9 +74,6 @@ namespace TeruletKeruletTerfogat
             this.negyzetGomb = new System.Windows.Forms.Button();
             this.rombuszGomb = new System.Windows.Forms.Button();
             this.deltoidGomb = new System.Windows.Forms.Button();
-            this.mOldalMertekegyseg = new System.Windows.Forms.ComboBox();
-            this.mOldalTextBox = new System.Windows.Forms.TextBox();
-            this.mOldal = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.alakzatPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
@@ -137,7 +137,7 @@ namespace TeruletKeruletTerfogat
             "dm",
             "m",
             "km"});
-            this.dOldalMertekegyseg.Location = new System.Drawing.Point(192, 463);
+            this.dOldalMertekegyseg.Location = new System.Drawing.Point(189, 140);
             this.dOldalMertekegyseg.Name = "dOldalMertekegyseg";
             this.dOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
             this.dOldalMertekegyseg.TabIndex = 14;
@@ -146,7 +146,7 @@ namespace TeruletKeruletTerfogat
             // 
             // dOldalTextBox
             // 
-            this.dOldalTextBox.Location = new System.Drawing.Point(84, 464);
+            this.dOldalTextBox.Location = new System.Drawing.Point(81, 141);
             this.dOldalTextBox.Name = "dOldalTextBox";
             this.dOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.dOldalTextBox.TabIndex = 13;
@@ -155,7 +155,7 @@ namespace TeruletKeruletTerfogat
             // dOldal
             // 
             this.dOldal.AutoSize = true;
-            this.dOldal.Location = new System.Drawing.Point(8, 466);
+            this.dOldal.Location = new System.Drawing.Point(5, 143);
             this.dOldal.Name = "dOldal";
             this.dOldal.Size = new System.Drawing.Size(41, 13);
             this.dOldal.TabIndex = 12;
@@ -187,7 +187,7 @@ namespace TeruletKeruletTerfogat
             this.panel1.Controls.Add(this.dOldalTextBox);
             this.panel1.Controls.Add(this.eOldalTextBox);
             this.panel1.Controls.Add(this.dOldalMertekegyseg);
-            this.panel1.Controls.Add(this.sugar);
+            this.panel1.Controls.Add(this.rSugar);
             this.panel1.Controls.Add(this.eOldal);
             this.panel1.Controls.Add(this.rSugarTextBox);
             this.panel1.Controls.Add(this.rSugarMertekegyseg);
@@ -196,187 +196,21 @@ namespace TeruletKeruletTerfogat
             this.panel1.Size = new System.Drawing.Size(249, 371);
             this.panel1.TabIndex = 25;
             // 
-            // fOldalMertekegyseg
+            // mOldalMertekegyseg
             // 
-            this.fOldalMertekegyseg.FormattingEnabled = true;
-            this.fOldalMertekegyseg.Items.AddRange(new object[] {
+            this.mOldalMertekegyseg.FormattingEnabled = true;
+            this.mOldalMertekegyseg.Items.AddRange(new object[] {
             "mm",
             "cm",
             "dm",
             "m",
             "km"});
-            this.fOldalMertekegyseg.Location = new System.Drawing.Point(192, 592);
-            this.fOldalMertekegyseg.Name = "fOldalMertekegyseg";
-            this.fOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.fOldalMertekegyseg.TabIndex = 23;
-            this.fOldalMertekegyseg.Text = "mm";
-            this.fOldalMertekegyseg.Visible = false;
-            // 
-            // fOldalTextBox
-            // 
-            this.fOldalTextBox.Location = new System.Drawing.Point(84, 593);
-            this.fOldalTextBox.Name = "fOldalTextBox";
-            this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
-            this.fOldalTextBox.TabIndex = 22;
-            this.fOldalTextBox.Visible = false;
-            // 
-            // fOldal
-            // 
-            this.fOldal.AutoSize = true;
-            this.fOldal.Location = new System.Drawing.Point(8, 595);
-            this.fOldal.Name = "fOldal";
-            this.fOldal.Size = new System.Drawing.Size(38, 13);
-            this.fOldal.TabIndex = 21;
-            this.fOldal.Text = "f oldal:";
-            this.fOldal.Visible = false;
-            // 
-            // eOldalMertekegyseg
-            // 
-            this.eOldalMertekegyseg.FormattingEnabled = true;
-            this.eOldalMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.eOldalMertekegyseg.Location = new System.Drawing.Point(192, 566);
-            this.eOldalMertekegyseg.Name = "eOldalMertekegyseg";
-            this.eOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.eOldalMertekegyseg.TabIndex = 20;
-            this.eOldalMertekegyseg.Text = "mm";
-            this.eOldalMertekegyseg.Visible = false;
-            // 
-            // eOldalTextBox
-            // 
-            this.eOldalTextBox.Location = new System.Drawing.Point(84, 567);
-            this.eOldalTextBox.Name = "eOldalTextBox";
-            this.eOldalTextBox.Size = new System.Drawing.Size(90, 20);
-            this.eOldalTextBox.TabIndex = 19;
-            this.eOldalTextBox.Visible = false;
-            // 
-            // eOldal
-            // 
-            this.eOldal.AutoSize = true;
-            this.eOldal.Location = new System.Drawing.Point(8, 569);
-            this.eOldal.Name = "eOldal";
-            this.eOldal.Size = new System.Drawing.Size(41, 13);
-            this.eOldal.TabIndex = 18;
-            this.eOldal.Text = "e oldal:";
-            this.eOldal.Visible = false;
-            // 
-            // rSugarMertekegyseg
-            // 
-            this.rSugarMertekegyseg.FormattingEnabled = true;
-            this.rSugarMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.rSugarMertekegyseg.Location = new System.Drawing.Point(192, 539);
-            this.rSugarMertekegyseg.Name = "rSugarMertekegyseg";
-            this.rSugarMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.rSugarMertekegyseg.TabIndex = 17;
-            this.rSugarMertekegyseg.Text = "mm";
-            this.rSugarMertekegyseg.Visible = false;
-            // 
-            // rSugarTextBox
-            // 
-            this.rSugarTextBox.Location = new System.Drawing.Point(84, 540);
-            this.rSugarTextBox.Name = "rSugarTextBox";
-            this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
-            this.rSugarTextBox.TabIndex = 16;
-            this.rSugarTextBox.Visible = false;
-            // 
-            // sugar
-            // 
-            this.sugar.AutoSize = true;
-            this.sugar.Location = new System.Drawing.Point(8, 542);
-            this.sugar.Name = "sugar";
-            this.sugar.Size = new System.Drawing.Size(42, 13);
-            this.sugar.TabIndex = 15;
-            this.sugar.Text = "r sugár:";
-            this.sugar.Visible = false;
-            // 
-            // aOldalMagassagMertekegyseg
-            // 
-            this.aOldalMagassagMertekegyseg.FormattingEnabled = true;
-            this.aOldalMagassagMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.aOldalMagassagMertekegyseg.Location = new System.Drawing.Point(192, 501);
-            this.aOldalMagassagMertekegyseg.Name = "aOldalMagassagMertekegyseg";
-            this.aOldalMagassagMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.aOldalMagassagMertekegyseg.TabIndex = 11;
-            this.aOldalMagassagMertekegyseg.Text = "mm";
-            // 
-            // aOldalMagassagTextBox
-            // 
-            this.aOldalMagassagTextBox.Location = new System.Drawing.Point(84, 502);
-            this.aOldalMagassagTextBox.Name = "aOldalMagassagTextBox";
-            this.aOldalMagassagTextBox.Size = new System.Drawing.Size(90, 20);
-            this.aOldalMagassagTextBox.TabIndex = 10;
-            // 
-            // aOldalMagassag
-            // 
-            this.aOldalMagassag.AutoSize = true;
-            this.aOldalMagassag.Location = new System.Drawing.Point(8, 496);
-            this.aOldalMagassag.Name = "aOldalMagassag";
-            this.aOldalMagassag.Size = new System.Drawing.Size(58, 26);
-            this.aOldalMagassag.TabIndex = 9;
-            this.aOldalMagassag.Text = "a oldal\r\nmagasság:";
-            // 
-            // cOldalMertekegyseg
-            // 
-            this.cOldalMertekegyseg.FormattingEnabled = true;
-            this.cOldalMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.cOldalMertekegyseg.Location = new System.Drawing.Point(192, 425);
-            this.cOldalMertekegyseg.Name = "cOldalMertekegyseg";
-            this.cOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.cOldalMertekegyseg.TabIndex = 8;
-            this.cOldalMertekegyseg.Text = "mm";
-            this.cOldalMertekegyseg.Visible = false;
-            // 
-            // cOldalTextBox
-            // 
-            this.cOldalTextBox.Location = new System.Drawing.Point(84, 426);
-            this.cOldalTextBox.Name = "cOldalTextBox";
-            this.cOldalTextBox.Size = new System.Drawing.Size(90, 20);
-            this.cOldalTextBox.TabIndex = 7;
-            this.cOldalTextBox.Visible = false;
-            // 
-            // cOldal
-            // 
-            this.cOldal.AutoSize = true;
-            this.cOldal.Location = new System.Drawing.Point(8, 428);
-            this.cOldal.Name = "cOldal";
-            this.cOldal.Size = new System.Drawing.Size(41, 13);
-            this.cOldal.TabIndex = 6;
-            this.cOldal.Text = "c oldal:";
-            this.cOldal.Visible = false;
-            // 
-            // bOldalMertekegyseg
-            // 
-            this.bOldalMertekegyseg.FormattingEnabled = true;
-            this.bOldalMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.bOldalMertekegyseg.Location = new System.Drawing.Point(192, 385);
-            this.bOldalMertekegyseg.Name = "bOldalMertekegyseg";
-            this.bOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.bOldalMertekegyseg.TabIndex = 5;
-            this.bOldalMertekegyseg.Text = "mm";
+            this.mOldalMertekegyseg.Location = new System.Drawing.Point(189, 300);
+            this.mOldalMertekegyseg.Name = "mOldalMertekegyseg";
+            this.mOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.mOldalMertekegyseg.TabIndex = 26;
+            this.mOldalMertekegyseg.Text = "mm";
+            this.mOldalMertekegyseg.Visible = false;
             // 
             // aOldalMertekegyseg
             // 
@@ -387,43 +221,243 @@ namespace TeruletKeruletTerfogat
             "dm",
             "m",
             "km"});
-            this.aOldalMertekegyseg.Location = new System.Drawing.Point(192, 350);
+            this.aOldalMertekegyseg.Location = new System.Drawing.Point(189, 27);
             this.aOldalMertekegyseg.Name = "aOldalMertekegyseg";
             this.aOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
             this.aOldalMertekegyseg.TabIndex = 4;
             this.aOldalMertekegyseg.Text = "mm";
             // 
+            // cOldal
+            // 
+            this.cOldal.AutoSize = true;
+            this.cOldal.Location = new System.Drawing.Point(5, 105);
+            this.cOldal.Name = "cOldal";
+            this.cOldal.Size = new System.Drawing.Size(41, 13);
+            this.cOldal.TabIndex = 6;
+            this.cOldal.Text = "c oldal:";
+            this.cOldal.Visible = false;
+            // 
+            // mOldalTextBox
+            // 
+            this.mOldalTextBox.Location = new System.Drawing.Point(81, 301);
+            this.mOldalTextBox.Name = "mOldalTextBox";
+            this.mOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.mOldalTextBox.TabIndex = 25;
+            this.mOldalTextBox.Visible = false;
+            // 
+            // bOldalMertekegyseg
+            // 
+            this.bOldalMertekegyseg.FormattingEnabled = true;
+            this.bOldalMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.bOldalMertekegyseg.Location = new System.Drawing.Point(189, 62);
+            this.bOldalMertekegyseg.Name = "bOldalMertekegyseg";
+            this.bOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.bOldalMertekegyseg.TabIndex = 5;
+            this.bOldalMertekegyseg.Text = "mm";
+            // 
+            // cOldalTextBox
+            // 
+            this.cOldalTextBox.Location = new System.Drawing.Point(81, 103);
+            this.cOldalTextBox.Name = "cOldalTextBox";
+            this.cOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.cOldalTextBox.TabIndex = 7;
+            this.cOldalTextBox.Visible = false;
+            // 
+            // mOldal
+            // 
+            this.mOldal.AutoSize = true;
+            this.mOldal.Location = new System.Drawing.Point(5, 303);
+            this.mOldal.Name = "mOldal";
+            this.mOldal.Size = new System.Drawing.Size(44, 13);
+            this.mOldal.TabIndex = 24;
+            this.mOldal.Text = "M oldal:";
+            this.mOldal.Visible = false;
+            // 
             // bOldalTextBox
             // 
-            this.bOldalTextBox.Location = new System.Drawing.Point(84, 386);
+            this.bOldalTextBox.Location = new System.Drawing.Point(81, 63);
             this.bOldalTextBox.Name = "bOldalTextBox";
             this.bOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.bOldalTextBox.TabIndex = 3;
             // 
+            // cOldalMertekegyseg
+            // 
+            this.cOldalMertekegyseg.FormattingEnabled = true;
+            this.cOldalMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.cOldalMertekegyseg.Location = new System.Drawing.Point(189, 102);
+            this.cOldalMertekegyseg.Name = "cOldalMertekegyseg";
+            this.cOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.cOldalMertekegyseg.TabIndex = 8;
+            this.cOldalMertekegyseg.Text = "mm";
+            this.cOldalMertekegyseg.Visible = false;
+            // 
+            // fOldalMertekegyseg
+            // 
+            this.fOldalMertekegyseg.FormattingEnabled = true;
+            this.fOldalMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.fOldalMertekegyseg.Location = new System.Drawing.Point(189, 269);
+            this.fOldalMertekegyseg.Name = "fOldalMertekegyseg";
+            this.fOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.fOldalMertekegyseg.TabIndex = 23;
+            this.fOldalMertekegyseg.Text = "mm";
+            this.fOldalMertekegyseg.Visible = false;
+            // 
             // bOldal
             // 
             this.bOldal.AutoSize = true;
-            this.bOldal.Location = new System.Drawing.Point(8, 388);
+            this.bOldal.Location = new System.Drawing.Point(5, 65);
             this.bOldal.Name = "bOldal";
             this.bOldal.Size = new System.Drawing.Size(41, 13);
             this.bOldal.TabIndex = 2;
             this.bOldal.Text = "b oldal:";
             // 
+            // aOldalMagassag
+            // 
+            this.aOldalMagassag.AutoSize = true;
+            this.aOldalMagassag.Location = new System.Drawing.Point(5, 173);
+            this.aOldalMagassag.Name = "aOldalMagassag";
+            this.aOldalMagassag.Size = new System.Drawing.Size(58, 26);
+            this.aOldalMagassag.TabIndex = 9;
+            this.aOldalMagassag.Text = "a oldal\r\nmagasság:";
+            // 
+            // fOldalTextBox
+            // 
+            this.fOldalTextBox.Location = new System.Drawing.Point(81, 270);
+            this.fOldalTextBox.Name = "fOldalTextBox";
+            this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.fOldalTextBox.TabIndex = 22;
+            this.fOldalTextBox.Visible = false;
+            // 
             // aOldalTextBox
             // 
-            this.aOldalTextBox.Location = new System.Drawing.Point(84, 351);
+            this.aOldalTextBox.Location = new System.Drawing.Point(81, 28);
             this.aOldalTextBox.Name = "aOldalTextBox";
             this.aOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.aOldalTextBox.TabIndex = 1;
             // 
+            // aOldalMagassagTextBox
+            // 
+            this.aOldalMagassagTextBox.Location = new System.Drawing.Point(81, 179);
+            this.aOldalMagassagTextBox.Name = "aOldalMagassagTextBox";
+            this.aOldalMagassagTextBox.Size = new System.Drawing.Size(90, 20);
+            this.aOldalMagassagTextBox.TabIndex = 10;
+            // 
+            // fOldal
+            // 
+            this.fOldal.AutoSize = true;
+            this.fOldal.Location = new System.Drawing.Point(5, 272);
+            this.fOldal.Name = "fOldal";
+            this.fOldal.Size = new System.Drawing.Size(38, 13);
+            this.fOldal.TabIndex = 21;
+            this.fOldal.Text = "f oldal:";
+            this.fOldal.Visible = false;
+            // 
             // aOldal
             // 
             this.aOldal.AutoSize = true;
-            this.aOldal.Location = new System.Drawing.Point(8, 353);
+            this.aOldal.Location = new System.Drawing.Point(5, 30);
             this.aOldal.Name = "aOldal";
             this.aOldal.Size = new System.Drawing.Size(41, 13);
             this.aOldal.TabIndex = 0;
             this.aOldal.Text = "a oldal:";
+            // 
+            // aOldalMagassagMertekegyseg
+            // 
+            this.aOldalMagassagMertekegyseg.FormattingEnabled = true;
+            this.aOldalMagassagMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.aOldalMagassagMertekegyseg.Location = new System.Drawing.Point(189, 178);
+            this.aOldalMagassagMertekegyseg.Name = "aOldalMagassagMertekegyseg";
+            this.aOldalMagassagMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.aOldalMagassagMertekegyseg.TabIndex = 11;
+            this.aOldalMagassagMertekegyseg.Text = "mm";
+            // 
+            // eOldalMertekegyseg
+            // 
+            this.eOldalMertekegyseg.FormattingEnabled = true;
+            this.eOldalMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.eOldalMertekegyseg.Location = new System.Drawing.Point(189, 243);
+            this.eOldalMertekegyseg.Name = "eOldalMertekegyseg";
+            this.eOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.eOldalMertekegyseg.TabIndex = 20;
+            this.eOldalMertekegyseg.Text = "mm";
+            this.eOldalMertekegyseg.Visible = false;
+            // 
+            // eOldalTextBox
+            // 
+            this.eOldalTextBox.Location = new System.Drawing.Point(81, 244);
+            this.eOldalTextBox.Name = "eOldalTextBox";
+            this.eOldalTextBox.Size = new System.Drawing.Size(90, 20);
+            this.eOldalTextBox.TabIndex = 19;
+            this.eOldalTextBox.Visible = false;
+            // 
+            // rSugar
+            // 
+            this.rSugar.AutoSize = true;
+            this.rSugar.Location = new System.Drawing.Point(5, 219);
+            this.rSugar.Name = "rSugar";
+            this.rSugar.Size = new System.Drawing.Size(42, 13);
+            this.rSugar.TabIndex = 15;
+            this.rSugar.Text = "r sugár:";
+            this.rSugar.Visible = false;
+            // 
+            // eOldal
+            // 
+            this.eOldal.AutoSize = true;
+            this.eOldal.Location = new System.Drawing.Point(5, 246);
+            this.eOldal.Name = "eOldal";
+            this.eOldal.Size = new System.Drawing.Size(41, 13);
+            this.eOldal.TabIndex = 18;
+            this.eOldal.Text = "e oldal:";
+            this.eOldal.Visible = false;
+            // 
+            // rSugarTextBox
+            // 
+            this.rSugarTextBox.Location = new System.Drawing.Point(81, 217);
+            this.rSugarTextBox.Name = "rSugarTextBox";
+            this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
+            this.rSugarTextBox.TabIndex = 16;
+            this.rSugarTextBox.Visible = false;
+            // 
+            // rSugarMertekegyseg
+            // 
+            this.rSugarMertekegyseg.FormattingEnabled = true;
+            this.rSugarMertekegyseg.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "dm",
+            "m",
+            "km"});
+            this.rSugarMertekegyseg.Location = new System.Drawing.Point(189, 216);
+            this.rSugarMertekegyseg.Name = "rSugarMertekegyseg";
+            this.rSugarMertekegyseg.Size = new System.Drawing.Size(54, 21);
+            this.rSugarMertekegyseg.TabIndex = 17;
+            this.rSugarMertekegyseg.Text = "mm";
+            this.rSugarMertekegyseg.Visible = false;
             // 
             // gulaGomb
             // 
@@ -546,40 +580,6 @@ namespace TeruletKeruletTerfogat
             this.deltoidGomb.UseVisualStyleBackColor = true;
             this.deltoidGomb.Click += new System.EventHandler(this.deltoidGomb_Click);
             // 
-            // mOldalMertekegyseg
-            // 
-            this.mOldalMertekegyseg.FormattingEnabled = true;
-            this.mOldalMertekegyseg.Items.AddRange(new object[] {
-            "mm",
-            "cm",
-            "dm",
-            "m",
-            "km"});
-            this.mOldalMertekegyseg.Location = new System.Drawing.Point(192, 623);
-            this.mOldalMertekegyseg.Name = "mOldalMertekegyseg";
-            this.mOldalMertekegyseg.Size = new System.Drawing.Size(54, 21);
-            this.mOldalMertekegyseg.TabIndex = 26;
-            this.mOldalMertekegyseg.Text = "mm";
-            this.mOldalMertekegyseg.Visible = false;
-            // 
-            // mOldalTextBox
-            // 
-            this.mOldalTextBox.Location = new System.Drawing.Point(84, 624);
-            this.mOldalTextBox.Name = "mOldalTextBox";
-            this.mOldalTextBox.Size = new System.Drawing.Size(90, 20);
-            this.mOldalTextBox.TabIndex = 25;
-            this.mOldalTextBox.Visible = false;
-            // 
-            // mOldal
-            // 
-            this.mOldal.AutoSize = true;
-            this.mOldal.Location = new System.Drawing.Point(8, 626);
-            this.mOldal.Name = "mOldal";
-            this.mOldal.Size = new System.Drawing.Size(44, 13);
-            this.mOldal.TabIndex = 24;
-            this.mOldal.Text = "M oldal:";
-            this.mOldal.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -647,7 +647,7 @@ namespace TeruletKeruletTerfogat
         private System.Windows.Forms.Button deltoidGomb;
         private System.Windows.Forms.ComboBox rSugarMertekegyseg;
         private System.Windows.Forms.TextBox rSugarTextBox;
-        private System.Windows.Forms.Label sugar;
+        private System.Windows.Forms.Label rSugar;
         private System.Windows.Forms.ComboBox fOldalMertekegyseg;
         private System.Windows.Forms.TextBox fOldalTextBox;
         private System.Windows.Forms.Label fOldal;
