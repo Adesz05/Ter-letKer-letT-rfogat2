@@ -37,7 +37,9 @@ namespace TeruletKeruletTerfogat
         {
             aOldal.Visible = false;
             aOldalTextBox.Visible = false;
+            aOldalTextBox.Text= "";
             aOldalMertekegyseg.Visible = false;
+
         }
 
         private void aOldalLathato(int index)
@@ -54,6 +56,7 @@ namespace TeruletKeruletTerfogat
             dOldal.Visible = false;
             dOldalTextBox.Visible = false;
             dOldalMertekegyseg.Visible = false;
+            dOldalTextBox.Text = "";
         }
 
         private void dOldalLathato(int index)
@@ -70,6 +73,7 @@ namespace TeruletKeruletTerfogat
             eOldal.Visible = false;
             eOldalTextBox.Visible = false;
             eOldalMertekegyseg.Visible = false;
+            eOldalTextBox.Text = "";
         }
 
         private void eOldalLathato(int index)
@@ -86,6 +90,7 @@ namespace TeruletKeruletTerfogat
             fOldal.Visible = false;
             fOldalTextBox.Visible = false;
             fOldalMertekegyseg.Visible = false;
+            fOldalTextBox.Text = "";
         }
 
         private void fOldalLathato(int index)
@@ -102,6 +107,7 @@ namespace TeruletKeruletTerfogat
             mOldal.Visible = false;
             mOldalTextBox.Visible = false;
             mOldalMertekegyseg.Visible = false;
+            mOldalTextBox.Text = "";
         }
 
         private void mOldalLathato(int index)
@@ -118,6 +124,7 @@ namespace TeruletKeruletTerfogat
             rSugar.Visible = false;
             rSugarTextBox.Visible = false;
             rSugarMertekegyseg.Visible = false;
+            rSugarTextBox.Text = "";
         }
 
         private void rSugarLathato(int index)
@@ -149,18 +156,21 @@ namespace TeruletKeruletTerfogat
             aOldalMagassag.Visible = false;
             aOldalMagassagTextBox.Visible = false;
             aOldalMagassagMertekegyseg.Visible = false;
+            aOldalMagassagTextBox.Text = "";
         }
         private void bOldalNemLathato()
         {
             bOldal.Visible = false;
             bOldalTextBox.Visible = false;
             bOldalMertekegyseg.Visible = false;
+            bOldalTextBox.Text = "";
         }
         private void cOldalNemLathato()
         {
             cOldal.Visible = false;
             cOldalTextBox.Visible = false;
             cOldalMertekegyseg.Visible = false;
+            cOldalTextBox.Text = "";
         }
 
         private void aOldalMagassagLathato(int index)
