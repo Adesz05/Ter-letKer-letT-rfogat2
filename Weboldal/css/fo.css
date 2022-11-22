@@ -46,10 +46,17 @@ a {
   transition: all 0.5s ease-in-out;
   text-decoration: underline;
 }
+a:hover{
+  color: #2C666E;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: underline;
+}
 footer a:hover{
   color: #2C666E;
 }
-
 .navMenu a:hover {
   color: #2C666E;
 }
