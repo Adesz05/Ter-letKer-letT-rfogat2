@@ -42,7 +42,6 @@ namespace TeruletKeruletTerfogat
             aOldalMertekegyseg.Visible = false;
 
         }
-
         private void aOldalLathato(int index)
         {
             aOldal.Visible = true;
@@ -213,6 +212,28 @@ namespace TeruletKeruletTerfogat
             bOldalLathato(1);
             cOldalLathato(2);
             aOldalMagassagLathato(3);
+
+            
+        }
+
+        private void HaromszogSzamitas()
+        {
+            double hterulet = 0;
+            double hkerulet = 0;
+
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
+            {
+                double a = Convert.ToDouble(aOldalTextBox.Text);
+                double b = Convert.ToDouble(bOldalTextBox.Text);
+                double c = Convert.ToDouble(cOldalTextBox.Text);
+                double m = Convert.ToDouble(aOldalMagassagTextBox.Text);
+
+                hterulet = a + b + c;
+                hkerulet = (a * m) / 2;
+
+                label3.Text = "K = " + hterulet.ToString();
+                label4.Text = "T = " + hkerulet.ToString();
+            }
         }
 
         private void trapezGomb_Click(object sender, EventArgs e)
@@ -311,7 +332,7 @@ namespace TeruletKeruletTerfogat
 
         private void button12_Click(object sender, EventArgs e)
         {
-            //fOldal.Location = new Point(8, 24);
+            HaromszogSzamitas();
         }
 
         private void aOldalTextBox_Click(object sender, EventArgs e)
