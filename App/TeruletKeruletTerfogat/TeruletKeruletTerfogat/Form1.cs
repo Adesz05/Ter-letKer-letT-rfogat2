@@ -313,5 +313,97 @@ namespace TeruletKeruletTerfogat
         {
             //fOldal.Location = new Point(8, 24);
         }
+
+        private void aOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length==1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Aoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Aoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+
+
+        }
+
+        private void bOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Boldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Boldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+                
+        }
+
+        private void cOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Coldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Coldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
+
+        private void dOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Doldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Doldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
+
+        private void aOldalMagassagTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Magassagoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Magassagoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
+
+        private void rSugarTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Rsugár.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Rsugár.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
+
+        private void eOldalTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

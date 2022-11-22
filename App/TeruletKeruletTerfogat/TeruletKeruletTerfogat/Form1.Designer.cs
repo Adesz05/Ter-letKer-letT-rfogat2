@@ -151,6 +151,7 @@ namespace TeruletKeruletTerfogat
             this.dOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.dOldalTextBox.TabIndex = 13;
             this.dOldalTextBox.Visible = false;
+            this.dOldalTextBox.Click += new System.EventHandler(this.dOldalTextBox_Click);
             // 
             // dOldal
             // 
@@ -267,6 +268,7 @@ namespace TeruletKeruletTerfogat
             this.cOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.cOldalTextBox.TabIndex = 7;
             this.cOldalTextBox.Visible = false;
+            this.cOldalTextBox.Click += new System.EventHandler(this.cOldalTextBox_Click);
             // 
             // mOldal
             // 
@@ -284,6 +286,7 @@ namespace TeruletKeruletTerfogat
             this.bOldalTextBox.Name = "bOldalTextBox";
             this.bOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.bOldalTextBox.TabIndex = 3;
+            this.bOldalTextBox.Click += new System.EventHandler(this.bOldalTextBox_Click);
             // 
             // cOldalMertekegyseg
             // 
@@ -349,6 +352,7 @@ namespace TeruletKeruletTerfogat
             this.aOldalTextBox.Name = "aOldalTextBox";
             this.aOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.aOldalTextBox.TabIndex = 1;
+            this.aOldalTextBox.Click += new System.EventHandler(this.aOldalTextBox_Click);
             // 
             // aOldalMagassagTextBox
             // 
@@ -356,6 +360,7 @@ namespace TeruletKeruletTerfogat
             this.aOldalMagassagTextBox.Name = "aOldalMagassagTextBox";
             this.aOldalMagassagTextBox.Size = new System.Drawing.Size(90, 20);
             this.aOldalMagassagTextBox.TabIndex = 10;
+            this.aOldalMagassagTextBox.Click += new System.EventHandler(this.aOldalMagassagTextBox_Click);
             // 
             // fOldal
             // 
@@ -414,6 +419,7 @@ namespace TeruletKeruletTerfogat
             this.eOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.eOldalTextBox.TabIndex = 19;
             this.eOldalTextBox.Visible = false;
+            this.eOldalTextBox.Click += new System.EventHandler(this.eOldalTextBox_Click);
             // 
             // rSugar
             // 
@@ -442,6 +448,7 @@ namespace TeruletKeruletTerfogat
             this.rSugarTextBox.Size = new System.Drawing.Size(90, 20);
             this.rSugarTextBox.TabIndex = 16;
             this.rSugarTextBox.Visible = false;
+            this.rSugarTextBox.Click += new System.EventHandler(this.rSugarTextBox_Click);
             // 
             // rSugarMertekegyseg
             // 
