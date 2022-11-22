@@ -12,13 +12,14 @@ namespace TeruletKeruletTerfogat
 {
     public partial class Form1 : Form
     {
+        static string Aktkep = "Háromszög.png";
         static List<Poziciok> Pozik = new List<Poziciok>();
         public Form1()
         {
             InitializeComponent();
             PozicioFeltoltes();
             Torles();
-            alakzatPictureBox.Image = Image.FromFile(@"Háromszög.png");
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             aOldalLathato(0);
             bOldalLathato(1);
             cOldalLathato(2);
@@ -205,7 +206,8 @@ namespace TeruletKeruletTerfogat
 
         private void haromszogGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Háromszög.png");
+            Aktkep = "Háromszög.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
@@ -215,7 +217,8 @@ namespace TeruletKeruletTerfogat
 
         private void trapezGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Trapéz.png");
+            Aktkep = "Trapéz.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
@@ -226,7 +229,8 @@ namespace TeruletKeruletTerfogat
 
         private void paralelogrammaGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Paralelogramma.png");
+            Aktkep = "Paralelogramma.png";
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
@@ -235,7 +239,8 @@ namespace TeruletKeruletTerfogat
 
         private void teglalapGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Téglalap.png");
+            Aktkep = "Téglalap.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
@@ -243,7 +248,8 @@ namespace TeruletKeruletTerfogat
 
         private void deltoidGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Deltoid.png");
+            Aktkep = "Deltoid.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
@@ -254,7 +260,8 @@ namespace TeruletKeruletTerfogat
 
         private void rombuszGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Rombusz.png");
+            Aktkep = "Rombusz.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
             eOldalLathato(1);
@@ -263,35 +270,40 @@ namespace TeruletKeruletTerfogat
 
         private void negyzetGomb_Click(object sender, EventArgs e)
         {
+            Aktkep = "Négyzet.png";
+            alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
-            alakzatPictureBox.Image = Image.FromFile(@"Négyzet.png");
             aOldalLathato(0);
         }
 
         private void korGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Kör.png");
+            Aktkep = "Kör.png";
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             rSugarLathato(0);
         }
 
         private void gombGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Gömb.png");
+            Aktkep = "Gömb.png";
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             rSugarLathato(0);
         }
 
         private void hengerGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Henger.png");
+            Aktkep = "Henger.png";
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             mOldalLathato(0);
         }
 
         private void gulaGomb_Click(object sender, EventArgs e)
         {
-            alakzatPictureBox.Image = Image.FromFile(@"Gúla.png");
+            Aktkep = "Gúla.png";
+            alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             aOldalLathato(0);
             mOldalLathato(1);
