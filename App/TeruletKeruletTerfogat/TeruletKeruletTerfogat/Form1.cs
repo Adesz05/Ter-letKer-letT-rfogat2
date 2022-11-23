@@ -406,61 +406,76 @@ namespace TeruletKeruletTerfogat
 
         private void GulaSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
-            m = Convert.ToDouble(mOldalTextBox.Text);
-            ma = Math.Sqrt(a * a + m * m);
+            if (aOldalTextBox.Text!="" && mOldalTextBox.Text!="" && aOldalMagassagTextBox.Text!="")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                m = Convert.ToDouble(mOldalTextBox.Text);
+                ma = Math.Sqrt(a * a + m * m);
 
-            felszin = (a * a + 4 * a * ma)/2;
-            terfogat = (a*a*m)/3;
+                felszin = (a * a + 4 * a * ma) / 2;
+                terfogat = (a * a * m) / 3;
 
-            label3.Text = "F = " + felszin.ToString();
-            label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " + felszin.ToString();
+                label4.Text = "V = " + terfogat.ToString();
+            }
         }
 
         private void HengerSzamitas()
         {
-            r = Convert.ToDouble(rSugarTextBox.Text);
-            m = Convert.ToDouble(mOldalTextBox.Text);
+            if (rSugarTextBox.Text!="" && mOldalTextBox.Text!="")
+            {
+                r = Convert.ToDouble(rSugarTextBox.Text);
+                m = Convert.ToDouble(mOldalTextBox.Text);
 
 
-            felszin = 2 * r * r * Math.PI + 2 * r * m * Math.PI;
-            terfogat = r * r * Math.PI * m;
+                felszin = 2 * r * r * Math.PI + 2 * r * m * Math.PI;
+                terfogat = r * r * Math.PI * m;
 
-            label3.Text = "F = " + felszin.ToString();
-            label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " + felszin.ToString();
+                label4.Text = "V = " + terfogat.ToString();
+            }
         }
 
         private void GombSzamitas()
         {
-            r = Convert.ToDouble(rSugarTextBox.Text);
+            if (rSugarTextBox.Text != "")
+            {
+                r = Convert.ToDouble(rSugarTextBox.Text);
 
-            felszin = 4 *r* r * Math.PI;
-            terfogat = (4*r*r*r*Math.PI)/3;
+                felszin = 4 * r * r * Math.PI;
+                terfogat = (4 * r * r * r * Math.PI) / 3;
 
-            label3.Text = "F = " + felszin.ToString();
-            label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " + felszin.ToString();
+                label4.Text = "V = " + terfogat.ToString();
+            }
         }
 
         private void KorSzamitas()
         {
-            r = Convert.ToDouble(rSugarTextBox.Text);
+            if (rSugarTextBox.Text!="")
+            {
+                r = Convert.ToDouble(rSugarTextBox.Text);
 
-            kerulet = 2*r*Math.PI;
-            terulet = r*r*Math.PI;
+                kerulet = 2 * r * Math.PI;
+                terulet = r * r * Math.PI;
 
-            label3.Text = "K = " + kerulet.ToString();
-            label4.Text = "T = " + terulet.ToString();
+                label3.Text = "K = " + kerulet.ToString();
+                label4.Text = "T = " + terulet.ToString();
+            }
         }
 
         private void NegyzetSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
+            if (aOldalTextBox.Text!="")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
 
-            kerulet = a * 4;
-            terulet = a * a;
+                kerulet = a * 4;
+                terulet = a * a;
 
-            label3.Text = "K = " + kerulet.ToString();
-            label4.Text = "T = " + terulet.ToString();
+                label3.Text = "K = " + kerulet.ToString();
+                label4.Text = "T = " + terulet.ToString();
+            }
             
         }
         private void HaromszogSzamitas()
