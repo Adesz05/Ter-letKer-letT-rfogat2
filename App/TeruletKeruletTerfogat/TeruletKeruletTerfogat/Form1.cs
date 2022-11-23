@@ -14,6 +14,23 @@ namespace TeruletKeruletTerfogat
     {
         static string Aktkep = "Háromszög.png";
         static List<Poziciok> Pozik = new List<Poziciok>();
+
+        static double a = 0;
+        static double b = 0;
+        static double c = 0;
+        static double d = 0;
+        static double e = 0;
+        static double f = 0;
+        static double ma = 0;
+        static double m = 0;
+        static double r = 0;
+        static double kerulet = 0;
+        static double terulet = 0;
+        static double terfogat = 0;
+        static double felszin = 0;
+        static string alakzat = "";
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -223,16 +240,16 @@ namespace TeruletKeruletTerfogat
 
             if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
             {
-                double a = Convert.ToDouble(aOldalTextBox.Text);
-                double b = Convert.ToDouble(bOldalTextBox.Text);
-                double c = Convert.ToDouble(cOldalTextBox.Text);
-                double m = Convert.ToDouble(aOldalMagassagTextBox.Text);
+                 a = Convert.ToDouble(aOldalTextBox.Text);
+                 b = Convert.ToDouble(bOldalTextBox.Text);
+                 c = Convert.ToDouble(cOldalTextBox.Text);
+                 ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
 
-                hterulet = a + b + c;
-                hkerulet = (a * m) / 2;
+                terulet = a + b + c;
+                kerulet = (a * ma) / 2;
 
-                label3.Text = "K = " + hterulet.ToString();
-                label4.Text = "T = " + hkerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
             }
         }
 
