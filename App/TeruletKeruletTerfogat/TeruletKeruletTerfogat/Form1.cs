@@ -220,6 +220,7 @@ namespace TeruletKeruletTerfogat
 
         private void haromszogGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Háromszög.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -229,8 +230,20 @@ namespace TeruletKeruletTerfogat
             aOldalMagassagLathato(3);
         }
 
+        private void Sikidom()
+        {
+            label3.Text = "K=?";
+            label4.Text = "T=?";
+        }
+        private void Test()
+        {
+            label3.Text = "F=?";
+            label4.Text = "V=?";
+        }
+
         private void trapezGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Trapéz.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -243,6 +256,7 @@ namespace TeruletKeruletTerfogat
 
         private void paralelogrammaGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Paralelogramma.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
@@ -253,6 +267,7 @@ namespace TeruletKeruletTerfogat
 
         private void teglalapGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Téglalap.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -262,6 +277,7 @@ namespace TeruletKeruletTerfogat
 
         private void deltoidGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Deltoid.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -273,6 +289,7 @@ namespace TeruletKeruletTerfogat
 
         private void rombuszGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Rombusz.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -283,6 +300,7 @@ namespace TeruletKeruletTerfogat
 
         private void negyzetGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Négyzet.png";
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
@@ -291,6 +309,7 @@ namespace TeruletKeruletTerfogat
 
         private void korGomb_Click(object sender, EventArgs e)
         {
+            Sikidom();
             Aktkep = "Kör.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
@@ -299,6 +318,7 @@ namespace TeruletKeruletTerfogat
 
         private void gombGomb_Click(object sender, EventArgs e)
         {
+            Test();
             Aktkep = "Gömb.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
@@ -307,6 +327,7 @@ namespace TeruletKeruletTerfogat
 
         private void hengerGomb_Click(object sender, EventArgs e)
         {
+            Test();
             Aktkep = "Henger.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
@@ -316,6 +337,7 @@ namespace TeruletKeruletTerfogat
 
         private void gulaGomb_Click(object sender, EventArgs e)
         {
+            Test();
             Aktkep = "Gúla.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
