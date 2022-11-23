@@ -41,6 +41,14 @@ namespace TeruletKeruletTerfogat
             aOldalMagassagLathato(3);
         }
 
+        private void aOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(aOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                aOldalTextBox.Text = aOldalTextBox.Text.Remove(aOldalTextBox.Text.Length - 1);
+            }
+        }
         private void PozicioFeltoltes()
         {
             for (int i = 0; i < 9; i++)
@@ -568,6 +576,78 @@ namespace TeruletKeruletTerfogat
         private void eOldalTextBox_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(bOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                bOldalTextBox.Text = bOldalTextBox.Text.Remove(bOldalTextBox.Text.Length - 1);
+            }
+        }
+
+        private void cOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(cOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                cOldalTextBox.Text = cOldalTextBox.Text.Remove(cOldalTextBox.Text.Length - 1);
+            }
+        }
+
+        private void dOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(dOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                dOldalTextBox.Text = dOldalTextBox.Text.Remove(dOldalTextBox.Text.Length - 1);
+            }
+        }
+
+        private void aOldalMagassagTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(aOldalMagassagTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                aOldalMagassagTextBox.Text = aOldalMagassagTextBox.Text.Remove(aOldalMagassagTextBox.Text.Length - 1);
+            }
+        }
+
+        private void rSugarTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(rSugarTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                rSugarTextBox.Text = rSugarTextBox.Text.Remove(rSugarTextBox.Text.Length - 1);
+            }
+        }
+
+        private void eOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(eOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                eOldalTextBox.Text = eOldalTextBox.Text.Remove(eOldalTextBox.Text.Length - 1);
+            }
+        }
+
+        private void fOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(fOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                fOldalTextBox.Text = fOldalTextBox.Text.Remove(fOldalTextBox.Text.Length - 1);
+            }
+        }
+
+        private void mOldalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(mOldalTextBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Csak számokat lehet beírni.");
+                mOldalTextBox.Text = mOldalTextBox.Text.Remove(mOldalTextBox.Text.Length - 1);
+            }
         }
     }
 }
