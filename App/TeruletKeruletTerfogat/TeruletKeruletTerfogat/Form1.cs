@@ -415,8 +415,8 @@ namespace TeruletKeruletTerfogat
                 felszin = (a * a + 4 * a * ma) / 2;
                 terfogat = (a * a * m) / 3;
 
-                label3.Text = "F = " + felszin.ToString();
-                label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " + Math.Round((felszin),2).ToString();
+                label4.Text = "V = " + Math.Round((terfogat),2).ToString();
             }
         }
 
@@ -431,8 +431,8 @@ namespace TeruletKeruletTerfogat
                 felszin = 2 * r * r * Math.PI + 2 * r * m * Math.PI;
                 terfogat = r * r * Math.PI * m;
 
-                label3.Text = "F = " + felszin.ToString();
-                label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " + Math.Round((felszin), 2).ToString();
+                label4.Text = "V = " + Math.Round((terfogat),2).ToString();
             }
         }
 
@@ -445,8 +445,8 @@ namespace TeruletKeruletTerfogat
                 felszin = 4 * r * r * Math.PI;
                 terfogat = (4 * r * r * r * Math.PI) / 3;
 
-                label3.Text = "F = " + felszin.ToString();
-                label4.Text = "V = " + terfogat.ToString();
+                label3.Text = "F = " +  Math.Round((felszin), 2).ToString();
+                label4.Text = "V = " + Math.Round((terfogat), 2).ToString();
             }
         }
 
@@ -459,8 +459,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = 2 * r * Math.PI;
                 terulet = r * r * Math.PI;
 
-                label3.Text = "K = " + kerulet.ToString();
-                label4.Text = "T = " + terulet.ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
         }
 
@@ -473,8 +473,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = a * 4;
                 terulet = a * a;
 
-                label3.Text = "K = " + kerulet.ToString();
-                label4.Text = "T = " + terulet.ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
             
         }
@@ -490,8 +490,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = a + b + c;
                 terulet = (a * ma) / 2;
 
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
         }
         private void RombuszSzamitas()
@@ -505,8 +505,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = 4 * a;
                 terulet = e * f / 2;
 
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
            
         }
@@ -523,8 +523,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a + b) * 2;
                 terulet = e * f / 2;
 
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
             
         }
@@ -539,8 +539,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a + b) * 2;
                 terulet = a * b;
 
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
         }
 
@@ -557,8 +557,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = a + b + c + d;
                 terulet = (a + c) * ma / 2;
 
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
             
         }
@@ -574,8 +574,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a+b)*2;
                 terulet = a*ma;
 
-                label3.Text = "K = " + terulet.ToString();
-                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
             }
         }
 
