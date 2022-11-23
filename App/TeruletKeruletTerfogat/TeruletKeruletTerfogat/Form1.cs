@@ -28,7 +28,7 @@ namespace TeruletKeruletTerfogat
         static double terulet = 0;
         static double terfogat = 0;
         static double felszin = 0;
-        static string alakzat = "";
+        static string alakzat = "háromszög";
         public Form1()
         {
             InitializeComponent();
@@ -236,6 +236,7 @@ namespace TeruletKeruletTerfogat
             bOldalLathato(1);
             cOldalLathato(2);
             aOldalMagassagLathato(3);
+            alakzat = "háromszög";
         }
 
         private void Sikidom()
@@ -260,6 +261,7 @@ namespace TeruletKeruletTerfogat
             cOldalLathato(2);
             dOldalLathato(3);
             aOldalMagassagLathato(4);
+            alakzat = "trapéz";
         }
 
         private void paralelogrammaGomb_Click(object sender, EventArgs e)
@@ -270,7 +272,8 @@ namespace TeruletKeruletTerfogat
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
-            aOldalMagassagLathato(2); 
+            aOldalMagassagLathato(2);
+            alakzat = "paralelogramma";
         }
 
         private void teglalapGomb_Click(object sender, EventArgs e)
@@ -281,6 +284,7 @@ namespace TeruletKeruletTerfogat
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
+            alakzat = "téglalap";
         }
 
         private void deltoidGomb_Click(object sender, EventArgs e)
@@ -293,6 +297,7 @@ namespace TeruletKeruletTerfogat
             bOldalLathato(1);
             eOldalLathato(2);
             fOldalLathato(3);
+            alakzat = "deltoid";
         }
 
         private void rombuszGomb_Click(object sender, EventArgs e)
@@ -304,6 +309,7 @@ namespace TeruletKeruletTerfogat
             aOldalLathato(0);
             eOldalLathato(1);
             fOldalLathato(2);
+            alakzat = "rombusz";
         }
 
         private void negyzetGomb_Click(object sender, EventArgs e)
@@ -313,6 +319,7 @@ namespace TeruletKeruletTerfogat
             alakzatPictureBox.Image = Image.FromFile(Aktkep);
             Torles();
             aOldalLathato(0);
+            alakzat = "négyzet";
         }
 
         private void korGomb_Click(object sender, EventArgs e)
@@ -322,6 +329,7 @@ namespace TeruletKeruletTerfogat
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             rSugarLathato(0);
+            alakzat = "kör";
         }
 
         private void gombGomb_Click(object sender, EventArgs e)
@@ -331,6 +339,7 @@ namespace TeruletKeruletTerfogat
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             rSugarLathato(0);
+            alakzat = "gömb";
         }
 
         private void hengerGomb_Click(object sender, EventArgs e)
@@ -341,6 +350,7 @@ namespace TeruletKeruletTerfogat
             Torles();
             mOldalLathato(0);
             rSugarLathato(1);
+            alakzat = "henger";
         }
 
         private void gulaGomb_Click(object sender, EventArgs e)
@@ -351,16 +361,47 @@ namespace TeruletKeruletTerfogat
             Torles();
             aOldalLathato(0);
             mOldalLathato(1);
+            alakzat = "gúla";
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            //HaromszogSzamitas();
-            //NegyzetSzamitas();
-            //KorSzamitas();
-            //GombSzamitas();
-            //HengerSzamitas();
-            //GulaSzamitas();
+            switch (alakzat)
+            {
+                case "háromszög":
+                    HaromszogSzamitas();
+                    break;
+                case "kör":
+                    KorSzamitas();
+                    break;
+                case "henger":
+                    HengerSzamitas();
+                    break;
+                case "rombusz":
+                    RombuszSzamitas();
+                    break;
+                case "téglalap":
+                    TeglalapSzamitas();
+                    break;
+                case "gúla":
+                    GulaSzamitas();
+                    break;
+                case "deltoid":
+                    DeltoidSzamitas();
+                    break;
+                case "trapéz":
+                    TrapezSzamitas();
+                    break;
+                case "négyzet":
+                    NegyzetSzamitas();
+                    break;
+                case "gömb":
+                    GombSzamitas();
+                    break;
+                case "paralelogramma":
+                    ParalelogrammaSzamitas();
+                    break;
+            }
         }
 
         private void GulaSzamitas()
@@ -441,8 +482,8 @@ namespace TeruletKeruletTerfogat
         private void RombuszSzamitas()
         {
             a = Convert.ToDouble(aOldalTextBox.Text);
-            e = Convert.ToDouble(bOldalTextBox.Text);
-            f = Convert.ToDouble(eOldalTextBox.Text);
+            e = Convert.ToDouble(eOldalTextBox.Text);
+            f = Convert.ToDouble(fOldalTextBox.Text);
 
             kerulet = 4*a;
             terulet = e*f/2;
@@ -494,7 +535,7 @@ namespace TeruletKeruletTerfogat
 
         private void ParalelogrammaSzamitas()
         {
-            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && aOldalMagassag.Text != "")
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
                 b = Convert.ToDouble(bOldalTextBox.Text);
@@ -503,8 +544,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a+b)*2;
                 terulet = a*ma;
 
-                label4.Text = "T = " + kerulet.ToString();
                 label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
             }
         }
 
