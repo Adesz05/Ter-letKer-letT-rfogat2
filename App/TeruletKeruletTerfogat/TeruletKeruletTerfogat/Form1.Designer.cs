@@ -349,11 +349,8 @@ namespace TeruletKeruletTerfogat
             this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.fOldalTextBox.TabIndex = 22;
             this.fOldalTextBox.Visible = false;
-
-            this.fOldalTextBox.TextChanged += new System.EventHandler(this.fOldalTextBox_TextChanged);
-
             this.fOldalTextBox.Click += new System.EventHandler(this.fOldalTextBox_Click);
-
+            this.fOldalTextBox.TextChanged += new System.EventHandler(this.fOldalTextBox_TextChanged);
             // 
             // aOldalTextBox
             // 
@@ -620,6 +617,8 @@ namespace TeruletKeruletTerfogat
             this.Controls.Add(this.rombuszGomb);
             this.Controls.Add(this.deltoidGomb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "TerületKerületTérfogat";
             this.panel2.ResumeLayout(false);
