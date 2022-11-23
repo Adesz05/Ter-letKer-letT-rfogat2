@@ -496,56 +496,71 @@ namespace TeruletKeruletTerfogat
         }
         private void RombuszSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
-            e = Convert.ToDouble(eOldalTextBox.Text);
-            f = Convert.ToDouble(fOldalTextBox.Text);
+            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" && fOldalTextBox.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                e = Convert.ToDouble(eOldalTextBox.Text);
+                f = Convert.ToDouble(fOldalTextBox.Text);
 
-            kerulet = 4*a;
-            terulet = e*f/2;
+                kerulet = 4 * a;
+                terulet = e * f / 2;
 
-            label4.Text = "T = " + kerulet.ToString();
-            label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
+           
         }
 
         private void DeltoidSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
-            b = Convert.ToDouble(bOldalTextBox.Text);
-            e = Convert.ToDouble(eOldalTextBox.Text);
-            f = Convert.ToDouble(fOldalTextBox.Text);
+            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" && fOldalTextBox.Text != "" && bOldalTextBox.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                b = Convert.ToDouble(bOldalTextBox.Text);
+                e = Convert.ToDouble(eOldalTextBox.Text);
+                f = Convert.ToDouble(fOldalTextBox.Text);
 
-            kerulet = (a + b) * 2;
-            terulet = e*f / 2;
+                kerulet = (a + b) * 2;
+                terulet = e * f / 2;
 
-            label4.Text = "T = " + kerulet.ToString();
-            label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
+            
         }
 
         private void TeglalapSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
-            b = Convert.ToDouble(bOldalTextBox.Text);
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                b = Convert.ToDouble(bOldalTextBox.Text);
 
-            kerulet = (a + b)*2;
-            terulet = a * b;
+                kerulet = (a + b) * 2;
+                terulet = a * b;
 
-            label4.Text = "T = " + kerulet.ToString();
-            label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
         }
 
         private void TrapezSzamitas()
         {
-            a = Convert.ToDouble(aOldalTextBox.Text);
-            b = Convert.ToDouble(bOldalTextBox.Text);
-            c = Convert.ToDouble(cOldalTextBox.Text);
-            d = Convert.ToDouble(dOldalTextBox.Text);
-            ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && dOldalTextBox.Text != "" && aOldalMagassagTextBox.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                b = Convert.ToDouble(bOldalTextBox.Text);
+                c = Convert.ToDouble(cOldalTextBox.Text);
+                d = Convert.ToDouble(dOldalTextBox.Text);
+                ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
 
-            kerulet = a+b+c+d;
-            terulet = (a+c)*ma/2;
+                kerulet = a + b + c + d;
+                terulet = (a + c) * ma / 2;
 
-            label4.Text = "T = " + kerulet.ToString();
-            label3.Text = "K = " + terulet.ToString();
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
+            
         }
 
         private void ParalelogrammaSzamitas()
