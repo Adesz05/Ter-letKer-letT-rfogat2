@@ -29,8 +29,6 @@ namespace TeruletKeruletTerfogat
         static double terfogat = 0;
         static double felszin = 0;
         static string alakzat = "";
-        
-
         public Form1()
         {
             InitializeComponent();
@@ -229,28 +227,6 @@ namespace TeruletKeruletTerfogat
             bOldalLathato(1);
             cOldalLathato(2);
             aOldalMagassagLathato(3);
-
-            
-        }
-
-        private void HaromszogSzamitas()
-        {
-            double hterulet = 0;
-            double hkerulet = 0;
-
-            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
-            {
-                 a = Convert.ToDouble(aOldalTextBox.Text);
-                 b = Convert.ToDouble(bOldalTextBox.Text);
-                 c = Convert.ToDouble(cOldalTextBox.Text);
-                 ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
-
-                terulet = a + b + c;
-                kerulet = (a * ma) / 2;
-
-                label3.Text = "K = " + terulet.ToString();
-                label4.Text = "T = " + kerulet.ToString();
-            }
         }
 
         private void trapezGomb_Click(object sender, EventArgs e)
@@ -272,7 +248,7 @@ namespace TeruletKeruletTerfogat
             Torles();
             aOldalLathato(0);
             bOldalLathato(1);
-            aOldalMagassagLathato(2);
+            aOldalMagassagLathato(2); 
         }
 
         private void teglalapGomb_Click(object sender, EventArgs e)
@@ -293,7 +269,6 @@ namespace TeruletKeruletTerfogat
             bOldalLathato(1);
             eOldalLathato(2);
             fOldalLathato(3);
-
         }
 
         private void rombuszGomb_Click(object sender, EventArgs e)
@@ -415,6 +390,92 @@ namespace TeruletKeruletTerfogat
 
             label3.Text = "K = " + kerulet.ToString();
             label4.Text = "T = " + terulet.ToString();
+            
+        }
+        private void HaromszogSzamitas()
+        {
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                b = Convert.ToDouble(bOldalTextBox.Text);
+                c = Convert.ToDouble(cOldalTextBox.Text);
+                ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
+
+                kerulet = a + b + c;
+                terulet = (a * ma) / 2;
+
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
+        }
+        private void RombuszSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+            e = Convert.ToDouble(bOldalTextBox.Text);
+            f = Convert.ToDouble(eOldalTextBox.Text);
+
+            kerulet = 4*a;
+            terulet = e*f/2;
+
+            label4.Text = "T = " + kerulet.ToString();
+            label3.Text = "K = " + terulet.ToString();
+        }
+
+        private void DeltoidSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+            b = Convert.ToDouble(bOldalTextBox.Text);
+            e = Convert.ToDouble(eOldalTextBox.Text);
+            f = Convert.ToDouble(fOldalTextBox.Text);
+
+            kerulet = (a + b) * 2;
+            terulet = e*f / 2;
+
+            label4.Text = "T = " + kerulet.ToString();
+            label3.Text = "K = " + terulet.ToString();
+        }
+
+        private void TeglalapSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+            b = Convert.ToDouble(bOldalTextBox.Text);
+
+            kerulet = (a + b)*2;
+            terulet = a * b;
+
+            label4.Text = "T = " + kerulet.ToString();
+            label3.Text = "K = " + terulet.ToString();
+        }
+
+        private void TrapezSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+            b = Convert.ToDouble(bOldalTextBox.Text);
+            c = Convert.ToDouble(cOldalTextBox.Text);
+            d = Convert.ToDouble(dOldalTextBox.Text);
+            ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
+
+            kerulet = a+b+c+d;
+            terulet = (a+c)*ma/2;
+
+            label4.Text = "T = " + kerulet.ToString();
+            label3.Text = "K = " + terulet.ToString();
+        }
+
+        private void ParalelogrammaSzamitas()
+        {
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
+            {
+                a = Convert.ToDouble(aOldalTextBox.Text);
+                b = Convert.ToDouble(bOldalTextBox.Text);
+                ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
+
+                kerulet = (a+b)*2;
+                terulet = a*ma;
+
+                label4.Text = "T = " + kerulet.ToString();
+                label3.Text = "K = " + terulet.ToString();
+            }
         }
 
         private void aOldalTextBox_Click(object sender, EventArgs e)
