@@ -345,6 +345,7 @@ namespace TeruletKeruletTerfogat
             this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.fOldalTextBox.TabIndex = 22;
             this.fOldalTextBox.Visible = false;
+            this.fOldalTextBox.Click += new System.EventHandler(this.fOldalTextBox_Click);
             // 
             // aOldalTextBox
             // 

@@ -506,7 +506,30 @@ namespace TeruletKeruletTerfogat
 
         private void eOldalTextBox_Click(object sender, EventArgs e)
         {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Eoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Eoldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
 
+        private void fOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Foldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Foldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
         }
     }
 }
