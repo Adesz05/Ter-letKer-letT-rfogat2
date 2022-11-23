@@ -311,6 +311,7 @@ namespace TeruletKeruletTerfogat
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             Torles();
             mOldalLathato(0);
+            rSugarLathato(1);
         }
 
         private void gulaGomb_Click(object sender, EventArgs e)
@@ -324,6 +325,71 @@ namespace TeruletKeruletTerfogat
 
         private void button12_Click(object sender, EventArgs e)
         {
+            //HaromszogSzamitas();
+            //NegyzetSzamitas();
+            //KorSzamitas();
+            //GombSzamitas();
+            //HengerSzamitas();
+            //GulaSzamitas();
+        }
+
+        private void GulaSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+            m = Convert.ToDouble(mOldalTextBox.Text);
+            ma = Math.Sqrt(a * a + m * m);
+
+            felszin = (a * a + 4 * a * ma)/2;
+            terfogat = (a*a*m)/3;
+
+            label3.Text = "F = " + felszin.ToString();
+            label4.Text = "V = " + terfogat.ToString();
+        }
+
+        private void HengerSzamitas()
+        {
+            r = Convert.ToDouble(rSugarTextBox.Text);
+            m = Convert.ToDouble(mOldalTextBox.Text);
+
+
+            felszin = 2 * r * r * Math.PI + 2 * r * m * Math.PI;
+            terfogat = r * r * Math.PI * m;
+
+            label3.Text = "F = " + felszin.ToString();
+            label4.Text = "V = " + terfogat.ToString();
+        }
+
+        private void GombSzamitas()
+        {
+            r = Convert.ToDouble(rSugarTextBox.Text);
+
+            felszin = 4 *r* r * Math.PI;
+            terfogat = (4*r*r*r*Math.PI)/3;
+
+            label3.Text = "F = " + felszin.ToString();
+            label4.Text = "V = " + terfogat.ToString();
+        }
+
+        private void KorSzamitas()
+        {
+            r = Convert.ToDouble(rSugarTextBox.Text);
+
+            kerulet = 2*r*Math.PI;
+            terulet = r*r*Math.PI;
+
+            label3.Text = "K = " + kerulet.ToString();
+            label4.Text = "T = " + terulet.ToString();
+        }
+
+        private void NegyzetSzamitas()
+        {
+            a = Convert.ToDouble(aOldalTextBox.Text);
+
+            kerulet = a * 4;
+            terulet = a * a;
+
+            label3.Text = "K = " + kerulet.ToString();
+            label4.Text = "T = " + terulet.ToString();
             
         }
         private void HaromszogSzamitas()
