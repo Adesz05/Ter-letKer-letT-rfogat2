@@ -152,6 +152,7 @@ namespace TeruletKeruletTerfogat
             this.dOldalTextBox.TabIndex = 13;
             this.dOldalTextBox.Visible = false;
             this.dOldalTextBox.Click += new System.EventHandler(this.dOldalTextBox_Click);
+            this.dOldalTextBox.TextChanged += new System.EventHandler(this.dOldalTextBox_TextChanged);
             // 
             // dOldal
             // 
@@ -245,6 +246,7 @@ namespace TeruletKeruletTerfogat
             this.mOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.mOldalTextBox.TabIndex = 25;
             this.mOldalTextBox.Visible = false;
+            this.mOldalTextBox.TextChanged += new System.EventHandler(this.mOldalTextBox_TextChanged);
             // 
             // bOldalMertekegyseg
             // 
@@ -269,6 +271,7 @@ namespace TeruletKeruletTerfogat
             this.cOldalTextBox.TabIndex = 7;
             this.cOldalTextBox.Visible = false;
             this.cOldalTextBox.Click += new System.EventHandler(this.cOldalTextBox_Click);
+            this.cOldalTextBox.TextChanged += new System.EventHandler(this.cOldalTextBox_TextChanged);
             // 
             // mOldal
             // 
@@ -287,6 +290,7 @@ namespace TeruletKeruletTerfogat
             this.bOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.bOldalTextBox.TabIndex = 3;
             this.bOldalTextBox.Click += new System.EventHandler(this.bOldalTextBox_Click);
+            this.bOldalTextBox.TextChanged += new System.EventHandler(this.bOldalTextBox_TextChanged);
             // 
             // cOldalMertekegyseg
             // 
@@ -345,7 +349,11 @@ namespace TeruletKeruletTerfogat
             this.fOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.fOldalTextBox.TabIndex = 22;
             this.fOldalTextBox.Visible = false;
+<<<<<<< HEAD
+            this.fOldalTextBox.TextChanged += new System.EventHandler(this.fOldalTextBox_TextChanged);
+=======
             this.fOldalTextBox.Click += new System.EventHandler(this.fOldalTextBox_Click);
+>>>>>>> 7f1dc8c9df6f32c6e2fa5a950af3be3e7421413f
             // 
             // aOldalTextBox
             // 
@@ -354,6 +362,7 @@ namespace TeruletKeruletTerfogat
             this.aOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.aOldalTextBox.TabIndex = 1;
             this.aOldalTextBox.Click += new System.EventHandler(this.aOldalTextBox_Click);
+            this.aOldalTextBox.TextChanged += new System.EventHandler(this.aOldalTextBox_TextChanged);
             // 
             // aOldalMagassagTextBox
             // 
@@ -362,6 +371,7 @@ namespace TeruletKeruletTerfogat
             this.aOldalMagassagTextBox.Size = new System.Drawing.Size(90, 20);
             this.aOldalMagassagTextBox.TabIndex = 10;
             this.aOldalMagassagTextBox.Click += new System.EventHandler(this.aOldalMagassagTextBox_Click);
+            this.aOldalMagassagTextBox.TextChanged += new System.EventHandler(this.aOldalMagassagTextBox_TextChanged);
             // 
             // fOldal
             // 
@@ -421,6 +431,7 @@ namespace TeruletKeruletTerfogat
             this.eOldalTextBox.TabIndex = 19;
             this.eOldalTextBox.Visible = false;
             this.eOldalTextBox.Click += new System.EventHandler(this.eOldalTextBox_Click);
+            this.eOldalTextBox.TextChanged += new System.EventHandler(this.eOldalTextBox_TextChanged);
             // 
             // rSugar
             // 
@@ -450,6 +461,7 @@ namespace TeruletKeruletTerfogat
             this.rSugarTextBox.TabIndex = 16;
             this.rSugarTextBox.Visible = false;
             this.rSugarTextBox.Click += new System.EventHandler(this.rSugarTextBox_Click);
+            this.rSugarTextBox.TextChanged += new System.EventHandler(this.rSugarTextBox_TextChanged);
             // 
             // rSugarMertekegyseg
             // 
