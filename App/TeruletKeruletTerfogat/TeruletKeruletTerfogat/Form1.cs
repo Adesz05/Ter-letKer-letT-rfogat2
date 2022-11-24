@@ -15,19 +15,19 @@ namespace TeruletKeruletTerfogat
         static string Aktkep = "Háromszög.png";
         static List<Poziciok> Pozik = new List<Poziciok>();
 
-        static double a = 0;
-        static double b = 0;
-        static double c = 0;
-        static double d = 0;
-        static double e = 0;
-        static double f = 0;
-        static double ma = 0;
-        static double m = 0;
-        static double r = 0;
-        static double kerulet = 0;
-        static double terulet = 0;
-        static double terfogat = 0;
-        static double felszin = 0;
+        static double a;
+        static double b;
+        static double c;
+        static double d;
+        static double e;
+        static double f;
+        static double ma;
+        static double m;
+        static double r;
+        static double kerulet;
+        static double terulet;
+        static double terfogat;
+        static double felszin;
         static string alakzat = "háromszög";
         public Form1()
         {
@@ -48,12 +48,17 @@ namespace TeruletKeruletTerfogat
                 MessageBox.Show("Csak számokat lehet beírni.");
                 aOldalTextBox.Text = aOldalTextBox.Text.Remove(aOldalTextBox.Text.Length - 1);
             }
+            if (aOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
+                aOldalTextBox.Text = aOldalTextBox.Text.Remove(aOldalTextBox.Text.Length - 1);
+            }
         }
         private void PozicioFeltoltes()
         {
             for (int i = 0; i < 9; i++)
             {
-                Pozik.Add(new Poziciok(new Koordinatak(8, 24+35*i), new Koordinatak(84, 22+35*i), new Koordinatak(192, 21+35*i)));
+                Pozik.Add(new Poziciok(new Koordinatak(8, 24 + 35 * i), new Koordinatak(84, 22 + 35 * i), new Koordinatak(192, 21 + 35 * i)));
             }
         }
 
@@ -61,7 +66,7 @@ namespace TeruletKeruletTerfogat
         {
             aOldal.Visible = false;
             aOldalTextBox.Visible = false;
-            aOldalTextBox.Text= "";
+            aOldalTextBox.Text = "";
             aOldalMertekegyseg.Visible = false;
 
         }
@@ -367,6 +372,10 @@ namespace TeruletKeruletTerfogat
 
         private void button12_Click(object sender, EventArgs e)
         {
+            if (Convert.ToInt32(aOldalTextBox.Text) == 0 || Convert.ToInt32(bOldalTextBox.Text) == 0 || Convert.ToInt32(cOldalTextBox.Text) == 0 || Convert.ToInt32(dOldalTextBox.Text) == 0 || Convert.ToInt32(mOldal) == 0 || Convert.ToInt32(eOldalTextBox.Text) == 0 || Convert.ToInt32(fOldalTextBox.Text) == 0)
+            {
+                MessageBox.Show("Nem Írhatsz be nullát!");
+            }
             switch (alakzat)
             {
                 case "háromszög":
@@ -407,7 +416,7 @@ namespace TeruletKeruletTerfogat
 
         private void GulaSzamitas()
         {
-            if (aOldalTextBox.Text!="" && mOldalTextBox.Text!="" && aOldalMagassagTextBox.Text!="")
+            if (aOldalTextBox.Text != "" && mOldalTextBox.Text != "" && aOldalMagassagTextBox.Text != "")
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
                 m = Convert.ToDouble(mOldalTextBox.Text);
@@ -416,14 +425,14 @@ namespace TeruletKeruletTerfogat
                 felszin = (a * a + 4 * a * ma) / 2;
                 terfogat = (a * a * m) / 3;
 
-                label3.Text = "F = " + Math.Round((felszin),2).ToString();
-                label4.Text = "V = " + Math.Round((terfogat),2).ToString();
+                label3.Text = "F = " + Math.Round((felszin), 2).ToString();
+                label4.Text = "V = " + Math.Round((terfogat), 2).ToString();
             }
         }
 
         private void HengerSzamitas()
         {
-            if (rSugarTextBox.Text!="" && mOldalTextBox.Text!="")
+            if (rSugarTextBox.Text != "" && mOldalTextBox.Text != "")
             {
                 r = Convert.ToDouble(rSugarTextBox.Text);
                 m = Convert.ToDouble(mOldalTextBox.Text);
@@ -433,7 +442,7 @@ namespace TeruletKeruletTerfogat
                 terfogat = r * r * Math.PI * m;
 
                 label3.Text = "F = " + Math.Round((felszin), 2).ToString();
-                label4.Text = "V = " + Math.Round((terfogat),2).ToString();
+                label4.Text = "V = " + Math.Round((terfogat), 2).ToString();
             }
         }
 
@@ -446,14 +455,14 @@ namespace TeruletKeruletTerfogat
                 felszin = 4 * r * r * Math.PI;
                 terfogat = (4 * r * r * r * Math.PI) / 3;
 
-                label3.Text = "F = " +  Math.Round((felszin), 2).ToString();
+                label3.Text = "F = " + Math.Round((felszin), 2).ToString();
                 label4.Text = "V = " + Math.Round((terfogat), 2).ToString();
             }
         }
 
         private void KorSzamitas()
         {
-            if (rSugarTextBox.Text!="")
+            if (rSugarTextBox.Text != "")
             {
                 r = Convert.ToDouble(rSugarTextBox.Text);
 
@@ -467,7 +476,7 @@ namespace TeruletKeruletTerfogat
 
         private void NegyzetSzamitas()
         {
-            if (aOldalTextBox.Text!="")
+            if (aOldalTextBox.Text != "")
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
 
@@ -477,7 +486,7 @@ namespace TeruletKeruletTerfogat
                 label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
                 label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
-            
+
         }
         private void HaromszogSzamitas()
         {
@@ -509,7 +518,7 @@ namespace TeruletKeruletTerfogat
                 label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
                 label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
-           
+
         }
 
         private void DeltoidSzamitas()
@@ -527,7 +536,7 @@ namespace TeruletKeruletTerfogat
                 label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
                 label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
-            
+
         }
 
         private void TeglalapSzamitas()
@@ -561,7 +570,7 @@ namespace TeruletKeruletTerfogat
                 label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
                 label3.Text = "K = " + Math.Round((terulet), 2).ToString();
             }
-            
+
         }
 
         private void ParalelogrammaSzamitas()
@@ -572,8 +581,8 @@ namespace TeruletKeruletTerfogat
                 b = Convert.ToDouble(bOldalTextBox.Text);
                 ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
 
-                kerulet = (a+b)*2;
-                terulet = a*ma;
+                kerulet = (a + b) * 2;
+                terulet = a * ma;
 
                 label3.Text = "K = " + Math.Round((terulet), 2).ToString();
                 label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
@@ -582,7 +591,7 @@ namespace TeruletKeruletTerfogat
 
         private void aOldalTextBox_Click(object sender, EventArgs e)
         {
-            if (Aktkep.Split('_').Length==1)
+            if (Aktkep.Split('_').Length == 1)
             {
                 Aktkep = Aktkep.Split('.')[0] + "_Aoldal.png";
                 alakzatPictureBox.Image = Image.FromFile(@Aktkep);
@@ -608,7 +617,7 @@ namespace TeruletKeruletTerfogat
                 Aktkep = Aktkep.Split('_')[0] + "_Boldal.png";
                 alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             }
-                
+
         }
 
         private void cOldalTextBox_Click(object sender, EventArgs e)
@@ -702,6 +711,11 @@ namespace TeruletKeruletTerfogat
                 MessageBox.Show("Csak számokat lehet beírni.");
                 bOldalTextBox.Text = bOldalTextBox.Text.Remove(bOldalTextBox.Text.Length - 1);
             }
+            if (bOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
+                bOldalTextBox.Text = bOldalTextBox.Text.Remove(bOldalTextBox.Text.Length - 1);
+            }
         }
 
         private void cOldalTextBox_TextChanged(object sender, EventArgs e)
@@ -709,6 +723,11 @@ namespace TeruletKeruletTerfogat
             if (System.Text.RegularExpressions.Regex.IsMatch(cOldalTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Csak számokat lehet beírni.");
+                cOldalTextBox.Text = cOldalTextBox.Text.Remove(cOldalTextBox.Text.Length - 1);
+            }
+            if (cOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
                 cOldalTextBox.Text = cOldalTextBox.Text.Remove(cOldalTextBox.Text.Length - 1);
             }
         }
@@ -720,6 +739,11 @@ namespace TeruletKeruletTerfogat
                 MessageBox.Show("Csak számokat lehet beírni.");
                 dOldalTextBox.Text = dOldalTextBox.Text.Remove(dOldalTextBox.Text.Length - 1);
             }
+            if (dOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
+                dOldalTextBox.Text = dOldalTextBox.Text.Remove(dOldalTextBox.Text.Length - 1);
+            }
         }
 
         private void aOldalMagassagTextBox_TextChanged(object sender, EventArgs e)
@@ -727,6 +751,11 @@ namespace TeruletKeruletTerfogat
             if (System.Text.RegularExpressions.Regex.IsMatch(aOldalMagassagTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Csak számokat lehet beírni.");
+                aOldalMagassagTextBox.Text = aOldalMagassagTextBox.Text.Remove(aOldalMagassagTextBox.Text.Length - 1);
+            }
+            if (aOldalMagassagTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
                 aOldalMagassagTextBox.Text = aOldalMagassagTextBox.Text.Remove(aOldalMagassagTextBox.Text.Length - 1);
             }
         }
@@ -738,6 +767,12 @@ namespace TeruletKeruletTerfogat
                 MessageBox.Show("Csak számokat lehet beírni.");
                 rSugarTextBox.Text = rSugarTextBox.Text.Remove(rSugarTextBox.Text.Length - 1);
             }
+            if (rSugarTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
+                rSugarTextBox.Text = rSugarTextBox.Text.Remove(rSugarTextBox.Text.Length - 1);
+            }
+
         }
 
         private void eOldalTextBox_TextChanged(object sender, EventArgs e)
@@ -745,6 +780,11 @@ namespace TeruletKeruletTerfogat
             if (System.Text.RegularExpressions.Regex.IsMatch(eOldalTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Csak számokat lehet beírni.");
+                eOldalTextBox.Text = eOldalTextBox.Text.Remove(eOldalTextBox.Text.Length - 1);
+            }
+            if (eOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
                 eOldalTextBox.Text = eOldalTextBox.Text.Remove(eOldalTextBox.Text.Length - 1);
             }
         }
@@ -756,6 +796,11 @@ namespace TeruletKeruletTerfogat
                 MessageBox.Show("Csak számokat lehet beírni.");
                 fOldalTextBox.Text = fOldalTextBox.Text.Remove(fOldalTextBox.Text.Length - 1);
             }
+            if (fOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
+                fOldalTextBox.Text = fOldalTextBox.Text.Remove(fOldalTextBox.Text.Length - 1);
+            }
         }
 
         private void mOldalTextBox_TextChanged(object sender, EventArgs e)
@@ -763,6 +808,11 @@ namespace TeruletKeruletTerfogat
             if (System.Text.RegularExpressions.Regex.IsMatch(mOldalTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Csak számokat lehet beírni.");
+                mOldalTextBox.Text = mOldalTextBox.Text.Remove(mOldalTextBox.Text.Length - 1);
+            }
+            if (mOldalTextBox.Text == "0")
+            {
+                MessageBox.Show("Nem írhatsz be 0át");
                 mOldalTextBox.Text = mOldalTextBox.Text.Remove(mOldalTextBox.Text.Length - 1);
             }
         }
