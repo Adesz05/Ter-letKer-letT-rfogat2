@@ -317,6 +317,7 @@ namespace TeruletKeruletTerfogat
 
         private void hengerGomb_Click(object sender, EventArgs e)
         {
+            //szia
             Test();
             Aktkep = "Henger.png";
             alakzatPictureBox.Image = Image.FromFile(@Aktkep);
