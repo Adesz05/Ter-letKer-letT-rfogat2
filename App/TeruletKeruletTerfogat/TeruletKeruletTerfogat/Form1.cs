@@ -62,23 +62,19 @@ namespace TeruletKeruletTerfogat
             aOldal.Visible = false;
             aOldalTextBox.Visible = false;
             aOldalTextBox.Text= "";
-            aOldalMertekegyseg.Visible = false;
 
         }
         private void aOldalLathato(int index)
         {
             aOldal.Visible = true;
             aOldalTextBox.Visible = true;
-            aOldalMertekegyseg.Visible = true;
             aOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             aOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            aOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
         private void dOldalNemLathato()
         {
             dOldal.Visible = false;
             dOldalTextBox.Visible = false;
-            dOldalMertekegyseg.Visible = false;
             dOldalTextBox.Text = "";
         }
 
@@ -86,16 +82,13 @@ namespace TeruletKeruletTerfogat
         {
             dOldal.Visible = true;
             dOldalTextBox.Visible = true;
-            dOldalMertekegyseg.Visible = true;
             dOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             dOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            dOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
         private void eOldalNemLathato()
         {
             eOldal.Visible = false;
             eOldalTextBox.Visible = false;
-            eOldalMertekegyseg.Visible = false;
             eOldalTextBox.Text = "";
         }
 
@@ -103,16 +96,13 @@ namespace TeruletKeruletTerfogat
         {
             eOldal.Visible = true;
             eOldalTextBox.Visible = true;
-            eOldalMertekegyseg.Visible = true;
             eOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             eOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            eOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
         private void fOldalNemLathato()
         {
             fOldal.Visible = false;
             fOldalTextBox.Visible = false;
-            fOldalMertekegyseg.Visible = false;
             fOldalTextBox.Text = "";
         }
 
@@ -120,16 +110,13 @@ namespace TeruletKeruletTerfogat
         {
             fOldal.Visible = true;
             fOldalTextBox.Visible = true;
-            fOldalMertekegyseg.Visible = true;
             fOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             fOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            fOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
         private void mOldalNemLathato()
         {
             mOldal.Visible = false;
             mOldalTextBox.Visible = false;
-            mOldalMertekegyseg.Visible = false;
             mOldalTextBox.Text = "";
         }
 
@@ -137,16 +124,13 @@ namespace TeruletKeruletTerfogat
         {
             mOldal.Visible = true;
             mOldalTextBox.Visible = true;
-            mOldalMertekegyseg.Visible = true;
             mOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             mOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            mOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
         private void rSugarNemLathato()
         {
             rSugar.Visible = false;
             rSugarTextBox.Visible = false;
-            rSugarMertekegyseg.Visible = false;
             rSugarTextBox.Text = "";
         }
 
@@ -154,10 +138,8 @@ namespace TeruletKeruletTerfogat
         {
             rSugar.Visible = true;
             rSugarTextBox.Visible = true;
-            rSugarMertekegyseg.Visible = true;
             rSugar.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             rSugarTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            rSugarMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
 
         private void Torles()
@@ -178,21 +160,18 @@ namespace TeruletKeruletTerfogat
         {
             aOldalMagassag.Visible = false;
             aOldalMagassagTextBox.Visible = false;
-            aOldalMagassagMertekegyseg.Visible = false;
             aOldalMagassagTextBox.Text = "";
         }
         private void bOldalNemLathato()
         {
             bOldal.Visible = false;
             bOldalTextBox.Visible = false;
-            bOldalMertekegyseg.Visible = false;
             bOldalTextBox.Text = "";
         }
         private void cOldalNemLathato()
         {
             cOldal.Visible = false;
             cOldalTextBox.Visible = false;
-            cOldalMertekegyseg.Visible = false;
             cOldalTextBox.Text = "";
         }
 
@@ -200,30 +179,24 @@ namespace TeruletKeruletTerfogat
         {
             aOldalMagassag.Visible = true;
             aOldalMagassagTextBox.Visible = true;
-            aOldalMagassagMertekegyseg.Visible = true;
             aOldalMagassag.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             aOldalMagassagTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            aOldalMagassagMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
 
         private void cOldalLathato(int index)
         {
             cOldal.Visible = true;
             cOldalTextBox.Visible = true;
-            cOldalMertekegyseg.Visible = true;
             cOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             cOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            cOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
 
         private void bOldalLathato(int index)
         {
             bOldal.Visible = true;
             bOldalTextBox.Visible = true;
-            bOldalMertekegyseg.Visible = true;
             bOldal.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             bOldalTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
-            bOldalMertekegyseg.Location = new Point(Pozik[index].ComboBox.X, Pozik[index].ComboBox.Y);
         }
 
         private void haromszogGomb_Click(object sender, EventArgs e)
