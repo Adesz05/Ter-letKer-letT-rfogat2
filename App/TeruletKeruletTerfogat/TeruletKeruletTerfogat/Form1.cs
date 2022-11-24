@@ -459,7 +459,7 @@ namespace TeruletKeruletTerfogat
         }
         private void HaromszogSzamitas()
         {
-            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassag.Text != "")
+            if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "" && cOldalTextBox.Text != "" && aOldalMagassagTextBox.Text != "")
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
                 b = Convert.ToDouble(bOldalTextBox.Text);
