@@ -345,10 +345,6 @@ namespace TeruletKeruletTerfogat
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(aOldalTextBox.Text) == 0 || Convert.ToInt32(bOldalTextBox.Text) == 0 || Convert.ToInt32(cOldalTextBox.Text) == 0 || Convert.ToInt32(dOldalTextBox.Text) == 0 || Convert.ToInt32(mOldal) == 0 || Convert.ToInt32(eOldalTextBox.Text) == 0 || Convert.ToInt32(fOldalTextBox.Text) == 0)
-            {
-                MessageBox.Show("Nem Írhatsz be nullát!");
-            }
             switch (alakzat)
             {
                 case "háromszög":
@@ -473,8 +469,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = a + b + c;
                 terulet = (a * ma) / 2;
 
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
         }
         private void RombuszSzamitas()
@@ -488,8 +484,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = 4 * a;
                 terulet = e * f / 2;
 
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
 
         }
@@ -506,8 +502,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a + b) * 2;
                 terulet = e * f / 2;
 
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
 
         }
@@ -522,8 +518,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a + b) * 2;
                 terulet = a * b;
 
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
         }
 
@@ -540,8 +536,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = a + b + c + d;
                 terulet = (a + c) * ma / 2;
 
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
 
         }
@@ -557,8 +553,8 @@ namespace TeruletKeruletTerfogat
                 kerulet = (a + b) * 2;
                 terulet = a * ma;
 
-                label3.Text = "K = " + Math.Round((terulet), 2).ToString();
-                label4.Text = "T = " + Math.Round((kerulet), 2).ToString();
+                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
         }
 
