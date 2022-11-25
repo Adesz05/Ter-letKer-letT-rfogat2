@@ -40,7 +40,6 @@ namespace TeruletKeruletTerfogat
             cOldalLathato(2);
             aOldalMagassagLathato(3);
         }
-
         private void aOldalTextBox_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(aOldalTextBox.Text, "[^0-9]"))
@@ -61,7 +60,6 @@ namespace TeruletKeruletTerfogat
                 Pozik.Add(new Poziciok(new Koordinatak(8, 24 + 35 * i), new Koordinatak(84, 22 + 35 * i), new Koordinatak(192, 21 + 35 * i)));
             }
         }
-
         private void aOldalNemLathato()
         {
             aOldal.Visible = false;
@@ -82,7 +80,6 @@ namespace TeruletKeruletTerfogat
             dOldalTextBox.Visible = false;
             dOldalTextBox.Text = "";
         }
-
         private void dOldalLathato(int index)
         {
             dOldal.Visible = true;
@@ -96,7 +93,6 @@ namespace TeruletKeruletTerfogat
             eOldalTextBox.Visible = false;
             eOldalTextBox.Text = "";
         }
-
         private void eOldalLathato(int index)
         {
             eOldal.Visible = true;
@@ -110,7 +106,6 @@ namespace TeruletKeruletTerfogat
             fOldalTextBox.Visible = false;
             fOldalTextBox.Text = "";
         }
-
         private void fOldalLathato(int index)
         {
             fOldal.Visible = true;
@@ -124,7 +119,6 @@ namespace TeruletKeruletTerfogat
             mOldalTextBox.Visible = false;
             mOldalTextBox.Text = "";
         }
-
         private void mOldalLathato(int index)
         {
             mOldal.Visible = true;
@@ -138,7 +132,6 @@ namespace TeruletKeruletTerfogat
             rSugarTextBox.Visible = false;
             rSugarTextBox.Text = "";
         }
-
         private void rSugarLathato(int index)
         {
             rSugar.Visible = true;
@@ -146,7 +139,6 @@ namespace TeruletKeruletTerfogat
             rSugar.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             rSugarTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
         }
-
         private void Torles()
         {
             aOldalNemLathato();
@@ -160,7 +152,6 @@ namespace TeruletKeruletTerfogat
             aOldalMagassagNemLathato();
 
         }
-
         private void aOldalMagassagNemLathato()
         {
             aOldalMagassag.Visible = false;
@@ -179,7 +170,6 @@ namespace TeruletKeruletTerfogat
             cOldalTextBox.Visible = false;
             cOldalTextBox.Text = "";
         }
-
         private void aOldalMagassagLathato(int index)
         {
             aOldalMagassag.Visible = true;
@@ -187,7 +177,6 @@ namespace TeruletKeruletTerfogat
             aOldalMagassag.Location = new Point(Pozik[index].Label.X, Pozik[index].Label.Y);
             aOldalMagassagTextBox.Location = new Point(Pozik[index].TextBox.X, Pozik[index].TextBox.Y);
         }
-
         private void cOldalLathato(int index)
         {
             cOldal.Visible = true;
@@ -505,9 +494,7 @@ namespace TeruletKeruletTerfogat
                 label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
                 label4.Text = "T = " + Math.Round((terulet), 2).ToString();
             }
-
         }
-
         private void TeglalapSzamitas()
         {
             if (aOldalTextBox.Text != "" && bOldalTextBox.Text != "")
