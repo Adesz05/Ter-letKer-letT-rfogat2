@@ -263,7 +263,6 @@ namespace TeruletKeruletTerfogat
             aOldalLathato(0);
             bOldalLathato(1);
             eOldalLathato(2);
-            fOldalLathato(3);
             alakzat = "deltoid";
         }
 
@@ -275,7 +274,6 @@ namespace TeruletKeruletTerfogat
             Torles();
             aOldalLathato(0);
             eOldalLathato(1);
-            fOldalLathato(2);
             alakzat = "rombusz";
         }
 
@@ -454,45 +452,66 @@ namespace TeruletKeruletTerfogat
                 b = Convert.ToDouble(bOldalTextBox.Text);
                 c = Convert.ToDouble(cOldalTextBox.Text);
                 ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
-
-                kerulet = a + b + c;
-                terulet = (a * ma) / 2;
-
-                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
-                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
+                if (a>b+c||b>a+c||c>a+b||ma>b||ma>c)
+                {
+                    MessageBox.Show("A megadott háromszög nem valós");
+                }
+                else
+                {
+                    kerulet = a + b + c;
+                    terulet = (a * ma) / 2;
+                    
+                    label3.Text = "K = " + kerulet.ToString();
+                    label4.Text = "T = " + terulet.ToString();
+                }
             }
         }
         private void RombuszSzamitas()
         {
-            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" && fOldalTextBox.Text != "")
+
+            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" )
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
                 e = Convert.ToDouble(eOldalTextBox.Text);
-                f = Convert.ToDouble(fOldalTextBox.Text);
+                f = Math.Sqrt(a * a - e * e);
+                if (( 2 * a) < e || (2 * a) < f || (e/2+f/2)<a)
+                {
+                    MessageBox.Show("A megadott Rombusz nem valós");
+                }
+                else
+                { 
+                    kerulet = 4 * a;
+                    terulet = (e * f) / 2;
 
-                kerulet = 4 * a;
-                terulet = e * f / 2;
-
-                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
-                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
+                    label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                    label4.Text = "T = " + Math.Round((terulet), 2).ToString();
+                }
             }
 
         }
 
         private void DeltoidSzamitas()
         {
-            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" && fOldalTextBox.Text != "" && bOldalTextBox.Text != "")
+            if (aOldalTextBox.Text != "" && eOldalTextBox.Text != "" && bOldalTextBox.Text != "")
             {
                 a = Convert.ToDouble(aOldalTextBox.Text);
                 b = Convert.ToDouble(bOldalTextBox.Text);
                 e = Convert.ToDouble(eOldalTextBox.Text);
-                f = Convert.ToDouble(fOldalTextBox.Text);
+                double s = (a + b + e) / 2;
+                double t = Math.Sqrt(s * (s - a) * (s - b) * (s - e));
+                 f = 2 * ((2 * t) / e);
+                if (a > b + e || b > a + e || e > a + b )
+                {
+                    MessageBox.Show("A megadott Deltoid nem valós");
+                }
+                else
+                {
+                    kerulet = (a + b) * 2;
+                    terulet = e * f / 2;
 
-                kerulet = (a + b) * 2;
-                terulet = e * f / 2;
-
-                label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
-                label4.Text = "T = " + Math.Round((terulet), 2).ToString();
+                    label3.Text = "K = " + Math.Round((kerulet), 2).ToString();
+                    label4.Text = "T = " + Math.Round((terulet), 2).ToString();
+                }
             }
         }
         private void TeglalapSzamitas()
