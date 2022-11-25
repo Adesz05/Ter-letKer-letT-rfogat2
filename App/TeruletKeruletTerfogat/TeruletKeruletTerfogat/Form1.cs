@@ -486,12 +486,14 @@ namespace TeruletKeruletTerfogat
                 b = Convert.ToDouble(bOldalTextBox.Text);
                 c = Convert.ToDouble(cOldalTextBox.Text);
                 ma = Convert.ToDouble(aOldalMagassagTextBox.Text);
-
-                kerulet = a + b + c;
-                terulet = (a * ma) / 2;
-
-                label4.Text = "T = " + kerulet.ToString();
-                label3.Text = "K = " + terulet.ToString();
+                if (a>b+c||b>a+c||c>a+b||ma>b||ma>c)
+                {
+                    kerulet = a + b + c;
+                    terulet = (a * ma) / 2;
+                    
+                    label4.Text = "T = " + kerulet.ToString();
+                    label3.Text = "K = " + terulet.ToString();
+                }
             }
         }
         private void RombuszSzamitas()
