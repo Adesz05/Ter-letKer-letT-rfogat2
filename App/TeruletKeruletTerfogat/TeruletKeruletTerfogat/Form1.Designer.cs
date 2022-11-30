@@ -461,6 +461,7 @@ namespace TeruletKeruletTerfogat
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TerületKerületTérfogat";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
