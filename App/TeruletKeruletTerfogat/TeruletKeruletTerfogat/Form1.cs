@@ -720,6 +720,19 @@ namespace TeruletKeruletTerfogat
                 alakzatPictureBox.Image = Image.FromFile(@Aktkep);
             }
         }
+        private void mOldalTextBox_Click(object sender, EventArgs e)
+        {
+            if (Aktkep.Split('_').Length == 1)
+            {
+                Aktkep = Aktkep.Split('.')[0] + "_Moldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+            else
+            {
+                Aktkep = Aktkep.Split('_')[0] + "_Moldal.png";
+                alakzatPictureBox.Image = Image.FromFile(@Aktkep);
+            }
+        }
 
         private void bOldalTextBox_TextChanged(object sender, EventArgs e)
         {

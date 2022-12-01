@@ -181,6 +181,7 @@ namespace TeruletKeruletTerfogat
             this.mOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.mOldalTextBox.TabIndex = 25;
             this.mOldalTextBox.Visible = false;
+            this.mOldalTextBox.Click += new System.EventHandler(this.mOldalTextBox_Click);
             this.mOldalTextBox.TextChanged += new System.EventHandler(this.mOldalTextBox_TextChanged);
             // 
             // cOldalTextBox
