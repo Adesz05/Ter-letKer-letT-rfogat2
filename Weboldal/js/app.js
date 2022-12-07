@@ -6,6 +6,7 @@ function reklamalas(){
         alert("Nem adott meg minden adatot! ")
     }
     else{
+        alert("Köszönjük visszajelzését")
         console.log(email);
         console.log(panasz);
     }

@@ -181,6 +181,7 @@ namespace TeruletKeruletTerfogat
             this.mOldalTextBox.Size = new System.Drawing.Size(90, 20);
             this.mOldalTextBox.TabIndex = 25;
             this.mOldalTextBox.Visible = false;
+            this.mOldalTextBox.Click += new System.EventHandler(this.mOldalTextBox_Click);
             this.mOldalTextBox.TextChanged += new System.EventHandler(this.mOldalTextBox_TextChanged);
             // 
             // cOldalTextBox
@@ -461,6 +462,7 @@ namespace TeruletKeruletTerfogat
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TerületKerületTérfogat";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
